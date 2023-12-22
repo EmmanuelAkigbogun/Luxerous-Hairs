@@ -1601,6 +1601,10 @@ li::marker {
     width: 100px;
     aspect-ratio: 1/1;
   }
+  .update_tracking {
+    flex-wrap: wrap;
+  }
+
   /*admin*/
 }
 @media screen and (max-width: 345px) {
@@ -1614,11 +1618,18 @@ li::marker {
     flex-wrap: wrap;
     padding: 16px 8px;
   }
-    .uploaded_image {
+  .uploaded_image {
     min-width: 100%;
     width: 100%;
   }
-  .mobile_column_tiny{
+  .mobile_column_tiny {
     flex-direction: column;
+  }
+  .wrap345 {
+    flex-wrap: wrap;
+  }
+  .update_tracking_parent {
+    width: 100%;
+    justify-content: space-between;
   }
 }

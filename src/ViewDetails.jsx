@@ -8,7 +8,9 @@ function ViewDetails({ pathName }) {
         <section className={`gap24 column_reverse white_bg`}>
           <NavLink
             className={`gap10 align_center row_reverse j_end`}
-            to={pathName == "" ? `/Account/Order Details` : "/Admin/My%20Orders"}
+            to={
+              pathName == "" ? `/Account/Order Details` : "/Admin/My%20Orders"
+            }
           >
             <p className={`paragraph paragraph1 nowrap paragraph_bold`}>Back</p>
             <img
@@ -22,10 +24,14 @@ function ViewDetails({ pathName }) {
       {pathName == "" ? (
         ""
       ) : (
-        <section className="space_between white_bg gap24 flex_wrap">
-          <h3 className="heading heading3_small align_center">Order Summary</h3>
-          <section className="row gap12 align_center">
-            <p className="paragraph paragraph3">Update Tracking</p>
+        <section className="space_between white_bg gap24 wrap345">
+          <h3 className="heading heading3_small align_center flex_wrap">
+            Order Summary
+          </h3>
+          <section className="row gap12 align_center update_tracking_parent wrap345">
+            <p className="paragraph paragraph3 update_tracking nowrap">
+              Update Tracking
+            </p>
             <button className="black">
               <img src={files.trippleDotsWhite} alt="" />
             </button>
