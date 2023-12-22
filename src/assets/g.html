@@ -1,0 +1,4935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let collections1 = "./collections.png"
+let collections2 = "./collections.png"
+let collections3 = "./collections.png"
+let collections4 = "./collections.png"
+let collections5 = "./collections.png"
+let collections6 = "./collections.png"
+let collections7 = "./collections.png"
+let collections8 = "./collections.png"
+let collections9 = "./collections.png"
+let seller1 = "./seller1.png"
+let seller2 = "./seller2.png"
+let seller3 = "./seller3.png"
+let seller4 = "./seller4.png"
+let seller5 = "./seller5.png"
+let seller6 = "./seller6.png"
+let seller7 = "./seller7.png"
+let seller8 = "./seller8.png"
+let seller9 = "./seller9.png"
+let seller10 = "./seller10.png"
+let seller11 = "./seller11.png"
+let seller12 = "./seller12.png"
+let button1 = "./arrow-right-black.svg"
+let button2 = "./arrow-right-black.svg"
+let button3 = "./arrow-right-black.svg"
+let button4 = "./arrow-right-black.svg"
+let button5 = "./arrow-right-black.svg"
+let button6 = "./arrow-right-black.svg"
+let button7 = "./arrow-right-black.svg"
+let button8 = "./arrow-right-black.svg"
+let button9 = "./arrow-right-black.svg"
+review=(num)=>{
+          ol={}
+          vak=0; li=[]; zol=""
+         while(num>vak){
+            li.push(vak+1)
+            vak++
+         }
+         lop=li.map(e=>{
+            ad=Math.random().toString().slice(3,4)
+            if(ad>"0"&&ad<="5"){ad=ad}
+            else if(ad=="0"){ad="5"}
+            else{ad=String(Number(ad)-5)}
+            ol["profile"]="lorem profile ncnncncn"+ad
+            ol["comment"]="lorem comment ncnncncn lorem comment ncnncnc"+ad
+            ol["star"]=ad
+            zol+=","+JSON.stringify(ol)
+            })
+              kol=zol.replace(",","")
+                return `[`+kol+`]`         
+        }
+        big= [ {
+    text: "Raw Straight Type 1",
+    shop: "Shop Now",
+    image: collections1,
+    buttonImage: button1,
+    content: [
+        {
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:"true"
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller7,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller8,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller6,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller5,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    }
+    ]
+    },
+    { text: "Raw Straight Type 2",
+    shop: "Shop Now",
+    image: collections2,
+        buttonImage: button2,
+        content:    [{
+        image:seller2,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller7,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller8,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller6,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller5,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller8,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    }]
+    },
+    {
+    text: "Raw Straight Type 3",
+    shop: "Shop Now",
+    image: collections3,
+        buttonImage: button3
+        , content: [{
+        image:seller4,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller6,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller7,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller8,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller5,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller6,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller8,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller5,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller7,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    }]
+    },
+    {
+    text: "Raw Straight Type 4",
+    shop: "Shop Now",
+    image: collections4,
+        buttonImage: button4,
+            content:
+                [{
+        image:seller5,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller7,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller6,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller8,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    }]
+    
+    },
+    {
+    text: "Raw Straight Type 5",
+    shop: "Shop Now",
+    image: collections5,
+        buttonImage: button5,
+        content: [{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    }]
+        
+    
+    },
+    { text: "Raw Straight Type 6",
+    shop: "Shop Now",
+    image: collections6,
+    buttonImage: button6
+    },
+    {
+    text: "Raw Straight Type 7",
+    shop: "Shop Now",
+    image: collections7,
+        buttonImage: button7,
+ content: [{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    }]
+    },
+    {
+    text: "Raw Straight Type 8",
+    shop: "Shop Now",
+    image: collections8,
+        buttonImage: button8,
+ content: [{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    }]
+    },
+    {
+    text: "Raw Straight Type 9",
+    shop: "Shop Now",
+    image: collections9,
+        buttonImage: button9,
+ content: [{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller7,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller8,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller6,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller2,
+        text:"This is the name of the product 1",
+        price:"$200",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller4,
+        text:"This is the name of the product 2",
+        price:"$150",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller3,
+        text:"This is the name of the product 3",
+        price:"$380",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    },{
+        image:seller1,
+        text:"This is the name of the product 4",
+        price:"$170",
+        reviews:eval(review(Number(Math.random().toString().slice(3,5)))),
+        boolean:""
+    }]
+    }
+]
+
+
+//big.replaceAll("boolean","reviews:review(Number(Math.random().toString().slice(3,5))),boolean")
+       // copy(big.replaceAll("boolean","reviews:eval(review(Number(Math.random().toString().slice(3,5)))),\n        boolean"))
+
+        console.log(review(Number(Math.random().toString().slice(3,5))))
+    </script>
+</body>
+</html>

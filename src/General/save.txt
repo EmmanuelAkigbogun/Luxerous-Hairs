@@ -1,0 +1,312 @@
+import ReactDOM from "react-dom/client";
+import Pages from "./Pages";
+import Home from "./Home";
+import Contact from "./Contact";
+import Bundles from "./Bundles";
+import BuyersPurchase from "./BuyersPurchase";
+import BundleName from "./BundleName";
+import ProductName from "./ProductName";
+import { Test } from "./Test";
+import { Location } from "./General/Location";
+import Pagenation from "./Pagenation";
+import Description from "./Description";
+import Spec from "./Spec";
+import Review from "./Review";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
+import "./style.css";
+
+let router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Pages />}>
+      <Route path="/" element={<Home />} />
+      <Route path="/" element={<BuyersPurchase />}>
+        <Route path="Contact" element={<Contact />} />
+        <Route path="/Shop Our Bundles" element={<Bundles />} />
+        <Route
+          path="/Shop Our Bundles/:par/Product Name_Page/:dia"
+          element={<ProductName />}
+        >
+          <Route path="Description" element={<Description />}></Route>
+          <Route path="Spec" element={<Spec />}></Route>
+          <Route path="Review" element={<Review />}></Route>
+        </Route>
+        <Route
+          path="/Shop Our Bundles/:par/:ada"
+          element={<BundleName />}
+        ></Route>
+        <Route path="/Shop Our Bundles/:par" element={<BundleName />}></Route>
+      </Route>
+
+      <Route path="/cat/dog/goat/rabbit/:id" element={<Test />} />
+      <Route path="*" element={<Location />} />
+    </Route>
+  )
+);
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <>
+    <RouterProvider router={router} />
+  </>
+);
+
+
+import ReactDOM from "react-dom/client";
+import App from "./App";
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <>
+    <App />
+  </>
+);
+
+
+import ReactDOM from "react-dom/client";
+import Pages from "./Pages";
+import Home from "./Home";
+import Contact from "./Contact";
+import Bundles from "./Bundles";
+import BuyersPurchase from "./BuyersPurchase";
+import BundleName from "./BundleName";
+import ProductName from "./ProductName";
+import { Test } from "./Test";
+import { Location } from "./General/Location";
+import Description from "./Description";
+import Spec from "./Spec";
+import Review from "./Review";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
+import "./style.css";
+function Main() {
+  let router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path="/" element={<Pages />}>
+        <Route
+          path="/"
+          element={<Home/>}
+        />
+        <Route path="/" element={<BuyersPurchase />}>
+          <Route path="Contact" element={<Contact />} />
+          <Route path="/Shop Our Bundles" element={<Bundles />} />
+          <Route
+            path="/Shop Our Bundles/:par/Product Name_Page/:dia"
+            element={<ProductName />}
+          >
+            <Route
+              path="/Shop Our Bundles/:par/Product Name_Page/:dia"
+              element={<Description />}
+            ></Route>
+            <Route path="Spec" element={<Description />}></Route>
+          </Route>
+          <Route
+            path="/Shop Our Bundles/:par/Product Name_Page/:dia/_Page_Description"
+            element={<ProductName />}
+          >
+            <Route path="" element={<Description />}></Route>
+          </Route>
+          <Route
+            path="/Shop Our Bundles/:par/Product Name_Page/:dia/_Page_Spec"
+            element={<ProductName  />}
+          >
+            <Route path="" element={<Spec />}></Route>
+          </Route>
+          <Route
+            path="/Shop Our Bundles/:par/Product Name_Page/:dia/_Page_Review"
+            element={<ProductName  />}
+          >
+            <Route path="" element={<Review />}></Route>
+          </Route>
+          <Route
+            path="/Shop Our Bundles/:par/:ada"
+            element={<BundleName />}
+          ></Route>
+          <Route
+            path="/Shop Our Bundles/:par"
+            element={<BundleName />}
+          ></Route>
+        </Route>
+
+        <Route path="/cat/dog/goat/rabbit/:id" element={<Test />} />
+        <Route path="*" element={<Location />} />
+      </Route>
+    )
+  );
+  return <RouterProvider router={router} />;
+}
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <>
+    <Main />
+  </>
+);
+
+      <section className="gap24 space_between">
+        <h4 className="heading heading4">Reviews</h4>
+        <section className="row gap10">
+          <p className="paragraph paragraph1 nowrap">See All Reviews</p>
+          <img
+            src={files.arrowDown}
+            alt="right arrow"
+            className="icon deg270"
+          />
+        </section>
+      </section>
+      <section className="gap32 column">
+        <section className="gap24 row align_center">
+          <section className="review_box">
+            <section className="align_end row gap4">
+              <h2 className="heading heading2">{starValue}</h2>
+              <p className="paragraph paragraph2">/ 5 star</p>
+            </section>
+            <section>{a.reviews.length} Reviews</section>
+          </section>
+          <section className="gap8 column">
+            {list5.map((e) => {
+              return (
+                <section
+                  key={String(Math.random()).slice(2, 8)}
+                  className={`row gap4 align_center ${
+                    eval("product.Stars" + e) != 0 ? "" : "opacity"
+                  }`}
+                >
+                  <p key={String(Math.random()).slice(2, 8)}>{e}</p>
+                  <img
+                    key={String(Math.random()).slice(2, 8)}
+                    src={`${
+                      eval("product.Stars" + e) != 0
+                        ? files.blackStar
+                        : files.whiteStar
+                    }`}
+                    alt={`${
+                      eval("product.Stars" + e) != 0
+                        ? "black star"
+                        : "white star"
+                    }`}
+                    className="icon"
+                  />
+                  <section
+                    className="gray review_progress"
+                    key={String(Math.random()).slice(2, 8)}
+                  >
+                    <section
+                      key={String(Math.random()).slice(2, 8)}
+                      className="black_bg"
+                      style={{
+                        width:
+                          String(
+                            (Number(eval("product.Stars" + e)) * 100) /
+                              a.reviews.length
+                          ) + "%",
+                      }}
+                    ></section>
+                  </section>
+                  {console.log(
+                    String(
+                      (Number(eval("product.Stars" + e)) * 100) /
+                        a.reviews.length
+                    ) + "%"
+                  )}
+                  <p key={String(Math.random()).slice(2, 8)}>
+                    {eval("product.Stars" + e)}
+                  </p>
+                </section>
+              );
+            })}
+          </section>
+        </section>
+        <section className="column gap16">
+          <section>
+            <p className="paragrah paragraph0 paragraph_bold">
+              {product.review[0].profile}
+            </p>
+            <section>
+              {list5.map((e, i) => {
+                return (
+                  <img
+                    key={String(Math.random()).slice(2, 8)}
+                    src={`${
+                      Number(product.review[0].star) < Number(i + 1)
+                        ? files.whiteStar
+                        : files.blackStar
+                    }`}
+                    className="icon"
+                    alt={product.review[0].star}
+                  />
+                );
+              })}
+            </section>
+            <p className="paragrah paragraph2"> {product.review[0].comment}</p>
+          </section>
+          <section>
+            <img
+              src={product.review[0].picture}
+              alt=""
+              className="review_image"
+            />
+          </section>
+        </section>
+        <section className="column gap16">
+          <section>
+            <p className="paragrah paragraph0 paragraph_bold">
+              {product.review[1].profile}
+            </p>
+            {list5.map((e, i) => {
+              return (
+                <img
+                  key={String(Math.random()).slice(2, 8)}
+                  src={`${
+                    Number(product.review[1].star) < Number(i + 1)
+                      ? files.whiteStar
+                      : files.blackStar
+                  }`}
+                  className="icon"
+                  alt={product.review[1].star}
+                />
+              );
+            })}
+            <p className="paragrah paragraph2"> {product.review[1].comment}</p>
+          </section>
+          <section>
+            <img
+              src={product.review[1].picture}
+              alt=""
+              className="review_image"
+            />
+          </section>
+        </section>
+        <section className="column gap16">
+          <section>
+            <p className="paragrah paragraph0 paragraph_bold">
+              {product.review[2].profile}
+            </p>
+            {list5.map((e, i) => {
+              return (
+                <img
+                  key={String(Math.random()).slice(2, 8)}
+                  src={`${
+                    Number(product.review[2].star) < Number(i + 1)
+                      ? files.whiteStar
+                      : files.blackStar
+                  }`}
+                  className="icon"
+                  alt={product.review[2].star}
+                />
+              );
+            })}
+            <p className="paragrah paragraph2"> {product.review[2].comment}</p>
+          </section>
+          <section>
+            <img
+              src={product.review[2].picture}
+              alt=""
+              className="review_image"
+            />
+          </section>
+        </section>
+        {console.log(product.review)}
+      </section>
