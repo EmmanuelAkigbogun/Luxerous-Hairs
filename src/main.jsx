@@ -199,7 +199,7 @@ function Main() {
               ></Route>
             </Route>
           </Route>
-          <Route path="/cat/dog/goat/rabbit/:id" element={<Test />} />
+          <Route path="/cat/dog/goat/rabbit/:id" element={<Location />} />
         </Route>
       </>
     )
