@@ -6,7 +6,6 @@ import Bundles from "./Bundles";
 import BuyersPurchase from "./BuyersPurchase";
 import BundleName from "./BundleName";
 import ProductName from "./ProductName";
-import { Test } from "./Test";
 import { Location } from "./General/Location";
 import Description from "./Description";
 import Spec from "./Spec";
