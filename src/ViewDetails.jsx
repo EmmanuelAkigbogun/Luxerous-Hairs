@@ -28,7 +28,7 @@ function ViewDetails({ pathName }) {
           <h3 className="heading heading3_small align_center flex_wrap">
             Order Summary
           </h3>
-          <section className="row gap12 align_center update_tracking_parent wrap345">
+          <section className="row gap12 align_center update_tracking_parent wrap345 ">
             <p className="paragraph paragraph3 update_tracking nowrap">
               Update Tracking
             </p>
