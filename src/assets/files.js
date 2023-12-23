@@ -80,8 +80,10 @@ import galleryAdd from "./galleryAdd.svg";
 import deleteIcon from "./delete.svg";
 import checked from "./checked.svg";
 import add from "./add.svg";
+import close from "./close.svg";
 export default {
   camera: camera,
+  close: close,
   deleteIcon: deleteIcon,
   add: add,
   checked: checked,
