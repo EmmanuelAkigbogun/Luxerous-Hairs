@@ -40,7 +40,7 @@ function Footer() {
           <section className="column gap12">
             <p className="paragraph pragraph2"> Take Home Care</p>
             <p className="paragraph pragraph2">Shipping Policy</p>
-            <NavLink to="/Contact" className="paragraph paragraph2">
+            <NavLink to="/Contact Us" className="paragraph paragraph2">
               Contact Us
             </NavLink>
             <p className="paragraph pragraph2">Terms and Conditions</p>
