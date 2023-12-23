@@ -6,6 +6,7 @@ import Bundles from "./Bundles";
 import BuyersPurchase from "./BuyersPurchase";
 import BundleName from "./BundleName";
 import ProductName from "./ProductName";
+import { Test } from "./Test";
 import { Location } from "./General/Location";
 import Description from "./Description";
 import Spec from "./Spec";
@@ -22,7 +23,7 @@ import AccountDetails from "./AccountDetails";
 import OrderDetailsMain from "./OrderDetailsMain";
 import OrderDetails from "./OrderDetails";
 import ViewDetails from "./ViewDetails";
-
+import Test1 from "./test1";
 import TestimonialGrid from "./TestimonialGrid";
 import {
   createBrowserRouter,
@@ -142,7 +143,7 @@ function Main() {
             </Route>
             <Route path="/" element={<Home />} />
             <Route path="/" element={<BuyersPurchase />}>
-              <Route path="Contact" element={<Contact />} />
+              <Route path="Contact Us" element={<Contact />} />
               <Route path="/Shop Our Bundles" element={<Bundles />} />
               <Route
                 path="/Shop Our Bundles/:par/Product Name_Page/:dia"
@@ -199,7 +200,7 @@ function Main() {
               ></Route>
             </Route>
           </Route>
-          <Route path="/cat/dog/goat/rabbit/:id" element={<Location />} />
+          <Route path="/cat/dog/goat/rabbit/:id" element={<Test />} />
         </Route>
       </>
     )

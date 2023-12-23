@@ -68,7 +68,7 @@ function CartItems() {
                           }
                         </h4>
                       </section>
-                      <section className="gap32 row fit_content">
+                      <section className="gap32 row fit_content wrap345">
                         <section className="column gap8">
                           <p className="paragraph paragraph_bold paragraph2">
                             Length
@@ -128,7 +128,7 @@ function CartItems() {
                       </section>
                     </section>
                     <section className="cart_items_end j_end">
-                      <section className="gap32 row">
+                      <section className="gap32 row wrap345">
                         <NavLink
                           className="paragraph paragraph1"
                           to={`/Shop Our Bundles/${
