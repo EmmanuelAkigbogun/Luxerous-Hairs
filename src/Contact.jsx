@@ -54,7 +54,7 @@ function Contact() {
                 </section>
               </section>
             </section>
-            <section className="gap24 row flex_wrap j_center">
+            <section className="gap24 row wrap345 j_center">
               <img src={files.facebook} alt="" />
               <img src={files.instagram1} alt="" />
               <img src={files.twitter} alt="" />
@@ -96,7 +96,7 @@ function Contact() {
                 tabIndex="0"
                 onFocus={handleFocus}
               >
-                <select name="" id="phone" className="no_border contact_input white_bg">
+                <select name="" id="country_phone" className="no_border contact_input white_bg">
                   <option value="">+1</option>
                   <option value="">+123</option>
                   <option value="">+001</option>
