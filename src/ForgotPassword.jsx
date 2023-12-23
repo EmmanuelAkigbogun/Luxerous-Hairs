@@ -27,7 +27,10 @@ function ForgotPassword() {
           </section>
           <section className="gap32 column">
             <section className="column gap16">
-              <NavLink className="row gap10 button button0 black width100">
+              <NavLink
+                className="row gap10 button button0 black width100"
+                to={`/Account/Reset%20Password`}
+              >
                 Sign In <img src={files.arrowRight} alt="" />
               </NavLink>
               <NavLink className="row gap10 button button0 border white_bg width100">

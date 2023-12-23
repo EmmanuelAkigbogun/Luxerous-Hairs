@@ -1,5 +1,4 @@
 import files from "../assets/files";
-
 export let SectionCChild = ({ heading, data }) => {
   return (
     <>

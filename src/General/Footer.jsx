@@ -1,5 +1,13 @@
 import { NavLink } from "react-router-dom";
 import files from "../assets/files";
+let list = [
+  "Raw Straight Type 1",
+  "Raw Straight Type 2",
+  "Raw Straight Type 3",
+  "Raw Straight Type 4",
+  "Raw Straight Type 5",
+  "Raw Straight Type 6",
+];
 function Footer() {
   return (
     <>
@@ -26,11 +34,17 @@ function Footer() {
             Bundles
           </p>
           <section className="column gap12">
-            <p className="paragraph pragraph2">Bundles 1</p>
-            <p className="paragraph pragraph2">Bundles 2</p>
-            <p className="paragraph pragraph2">Bundles 3</p>
-            <p className="paragraph pragraph2">Bundles 4</p>
-            <p className="paragraph pragraph2"> Bundles 5</p>
+            {list.map((e) => {
+              return (
+                <NavLink
+                  key={e}
+                  className="paragraph pragraph2"
+                  to={`/Shop%20Our%20Bundles/${e}`}
+                >
+                  {e}
+                </NavLink>
+              );
+            })}
           </section>
         </section>
         <section className="gap14 column">

@@ -188,6 +188,15 @@ function Main() {
                 </Route>
                 <Route path="_Page_CartItems" element={<CartItems />} />
               </Route>
+              <Route path="Shop Our Bundles/My Cart" element={<MyCart />}>
+                <Route path="" element={<PaymentProcess />}>
+                  <Route path="" element={<Shipping />} />
+                  <Route path="_Page_Shipping Details" element={<Shipping />} />
+                  <Route path="_Page_Delivery Method" element={<Delivery />} />
+                  <Route path="_Page_Payment" element={<Payment />} />
+                </Route>
+                <Route path="_Page_CartItems" element={<CartItems />} />
+              </Route>
               <Route
                 path="/Shop Our Bundles/:par/:ada"
                 element={<BundleName />}

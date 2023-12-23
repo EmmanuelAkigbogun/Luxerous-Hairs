@@ -444,6 +444,12 @@ body::-webkit-scrollbar,
   align-items: center;
 }
 
+
+.align_start {
+  display: flex;
+  align-items: start;
+}
+
 .align_end {
   display: flex;
   align-items: flex-end;
@@ -558,7 +564,9 @@ img {
   object-fit: contain;
   object-position: bottom;
 }
-
+.pointer{
+  cursor: pointer;
+}
 /*general*/
 /* nav drop*/
 
@@ -566,6 +574,12 @@ img {
   padding: 24px 16px;
   background: var(--white);
   min-width: 248px;
+}
+.desk_drop_container {
+  height: calc(100% + 30px);
+  width: 100%;
+  top: 0px;
+  position: absolute;
 }
 .desk_fixed {
   position: fixed;
@@ -760,7 +774,7 @@ a {
 
 /*section c*/
 
-/*section b*/
+/*section d*/
 .d_heading {
   padding-inline-end: 16px;
 }
@@ -777,7 +791,9 @@ a {
 .section_d_child {
   padding-block: 40px;
 }
-
+.d_child_child{
+  width: 65%;
+}
 /*section d*/
 /*footer*/
 .footer {
@@ -1125,6 +1141,13 @@ li::marker {
   .parent_section {
     padding-inline: 5%;
   }
+  .desk_drop_container {
+    top: auto;
+    position: relative;
+    width: auto;
+    height: auto;
+
+  }
   .desk_flex {
     display: none;
   }
@@ -1141,7 +1164,7 @@ li::marker {
     top: auto;
     left: auto;
   }
-  .deg180 {
+  .mob_deg180 {
     transform: rotateZ(180deg);
   }
   .mobile_hide {
@@ -1173,7 +1196,6 @@ li::marker {
   .mob_position {
     display: flex;
     margin-bottom: 8px;
-    cursor: pointer;
   }
   .mob_80vh {
     height: 80vh;
@@ -1253,6 +1275,17 @@ li::marker {
   }
 
   /*section b*/
+    /*footer*/
+  .footer {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .footer_child1 {
+    width: auto;
+  }
+
+  /*footer*/
   .contact {
     gap: 170px;
     padding-inline: 5% 15%;
@@ -1416,17 +1449,7 @@ li::marker {
   /*section d*/
 
   /*section d*/
-  /*footer*/
-  .footer {
-    flex-direction: column;
-    gap: 32px;
-  }
 
-  .footer_child1 {
-    width: auto;
-  }
-
-  /*footer*/
   .contact {
     flex-direction: column;
     padding-inline: 5%;
@@ -1562,7 +1585,9 @@ li::marker {
   .d_child {
     align-items: flex-start;
   }
-
+.d_child_child{
+  width: auto;
+}
   /*contact*/
   .contact {
     padding-inline: 16px;

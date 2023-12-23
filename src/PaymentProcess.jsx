@@ -7,6 +7,10 @@ function PaymentProcess() {
   let { par } = useParams();
   let dia = useParams();
   let location = useLocation();
+  let newLocation = location.pathname.split("/");
+  newLocation.pop();
+  newLocation = newLocation.join("/");
+  let newLocation1 = location.pathname;
   let continiueButtonIndex =
     list.indexOf(
       list.filter((e) => {
@@ -15,16 +19,18 @@ function PaymentProcess() {
     ) + 1;
   return (
     <>
-      <PaginationWhite list={list} directory="/My Cart" />
+      <PaginationWhite list={list} directory="My Cart" />
       <form className="payment_process" id="form" name="form">
         <Outlet />
         <section className="j_end row">
           <section>
             {!location.pathname.endsWith("_Page_Payment") ? (
               <NavLink
-                to={`/Shop Our Bundles/${par}/Product Name_Page/${
-                  dia["dia"]
-                }/My Cart/_Page_${
+                to={`${
+                  location.pathname.replaceAll("%20", " ").endsWith("My Cart")
+                    ? newLocation1
+                    : newLocation
+                }/_Page_${
                   continiueButtonIndex == 0
                     ? list[1]
                     : list[continiueButtonIndex]

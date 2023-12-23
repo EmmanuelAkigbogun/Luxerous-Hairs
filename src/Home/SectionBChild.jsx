@@ -1,6 +1,6 @@
 import { useState } from "react";
 import files from "../assets/files";
-export let SectionBChild = ({ heading, data }) => {
+export let SectionBChild = () => {
   let handleClick = (e) => {
     setcheck((check = e.target.htmlFor));
   };
@@ -15,6 +15,17 @@ export let SectionBChild = ({ heading, data }) => {
                 src={files.brunetteSmiling}
                 alt="brunette-smiling"
                 className="b_images"
+                style={{
+                  border: `${check == "b1" ? "" : "5px solid"} ${
+                    check == "b1"
+                      ? ""
+                      : check == "b2"
+                      ? "blue"
+                      : check == "b3"
+                      ? "purple"
+                      : "green"
+                  }`,
+                }}
               />
             </section>
             <section className="column gap24 flex1">
@@ -22,11 +33,33 @@ export let SectionBChild = ({ heading, data }) => {
                 src={files.brunetteSmiling1}
                 alt="brunette-smiling1"
                 className="b_images"
+                style={{
+                  border: `${check == "b1" ? "" : "5px solid"} ${
+                    check == "b1"
+                      ? ""
+                      : check == "b2"
+                      ? "blue"
+                      : check == "b3"
+                      ? "purple"
+                      : "green"
+                  }`,
+                }}
               />
               <img
                 src={files.brunetteSmiling2}
                 alt="brunette-smiling2.png"
                 className="b_images"
+                style={{
+                  border: `${check == "b1" ? "" : "5px solid"} ${
+                    check == "b1"
+                      ? ""
+                      : check == "b2"
+                      ? "blue"
+                      : check == "b3"
+                      ? "purple"
+                      : "green"
+                  }`,
+                }}
               />
             </section>
           </section>
@@ -34,13 +67,15 @@ export let SectionBChild = ({ heading, data }) => {
         <section className="space_between column flex1 b_text">
           <h2 className="heading heading2 j_end text_right b_heading">
             “Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum”.
+            vulputate libero et velit interdum {check}”.
           </h2>
           <section className="">
             <section className="gap16 column align_end">
               <section className="column gap8">
-                <p className="paragraph paragraph0 paragraph_bold">User Name</p>
-                <p className="paragraph paragraph1">User Title</p>
+                <p className="paragraph paragraph0 paragraph_bold">
+                  User Name {check}
+                </p>
+                <p className="paragraph paragraph1">User Title {check}</p>
               </section>
               <section>
                 <section className="row gap24">

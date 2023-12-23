@@ -5,6 +5,10 @@ function PaginationWhite({ list, directory }) {
   let dia = useParams();
   let { shop } = useParams();
   let location = useLocation();
+  let newLocation = location.pathname.split("/");
+  newLocation.pop();
+  newLocation = newLocation.join("/");
+  let newLocation1 = location.pathname;
   return (
     <>
       <section className="row product_scroll whitish">
@@ -43,6 +47,12 @@ function PaginationWhite({ list, directory }) {
                   ? location.pathname
                   : directory == "Account" || directory == "Admin"
                   ? `/${directory}/${e}`
+                  : directory == "My Cart"
+                  ? `${
+                      location.pathname.endsWith("My%20Cart")
+                        ? newLocation1
+                        : newLocation
+                    }${`/_Page_${e}`}`
                   : shop == "New Product"
                   ? `/Admin/My Products/${shop}/_Page_${e}`
                   : `/${
@@ -60,6 +70,7 @@ function PaginationWhite({ list, directory }) {
           );
         })}
       </section>
+      {console.log(directory,"dir")}
       {console.log(`${location}`)}
     </>
   );

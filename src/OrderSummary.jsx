@@ -77,7 +77,7 @@ function OrderSummary() {
           <NavLink
             to={
               location.pathname.endsWith("_Page_CartItems")
-                ? `/Shop Our Bundles/${par}/Product Name_Page/${dia["dia"]}/My Cart`
+                ? location.pathname.replace("/_Page_CartItems", "")
                 : location.pathname
             }
             className="row gap10 button button0 black width100"

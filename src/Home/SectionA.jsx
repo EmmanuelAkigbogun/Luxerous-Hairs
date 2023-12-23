@@ -1,5 +1,7 @@
 import { SectionAChild } from "./SectionAChild";
 import data from "../assets/Bundles";
+import CartItems from "../CartItems";
+import OrderSummary from "../OrderSummary";
 
 function SectionA() {
   return (
@@ -19,6 +21,7 @@ function SectionA() {
         />
         {console.log(data[0])}
       </section>
+
     </>
   );
 }

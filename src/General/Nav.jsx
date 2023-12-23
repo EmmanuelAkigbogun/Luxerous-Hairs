@@ -35,17 +35,17 @@ function Nav({ bagBoolean }) {
             }`}
           >
             <section className="row gap32 align_center mobile_width100">
-              <section className="mobile_width100 mob_gap24 mob_col mobile_show">
+              <section className="mobile_width100 mob_gap24 mob_col mobile_show relative">
                 <section
-                  className={`row gap8 mobile_space_between mobile_width100`}
+                  className={`row gap8 mobile_space_between mobile_width100 pointer`}
+                  onClick={() => {
+                    cl == "" ? scl((cl = "love")) : scl((cl = ""));
+                  }}
                   onMouseOver={() => {
                     sh((h = "desk_nav_pad desk_flex"));
                   }}
                   onMouseOut={() => {
                     sh((h = ""));
-                  }}
-                  onClick={() => {
-                    cl == "" ? scl((cl = "love")) : scl((cl = ""));
                   }}
                 >
                   <p className="paragraph paragraph1">Bundles</p>
@@ -54,17 +54,29 @@ function Nav({ bagBoolean }) {
                     alt="arrow up"
                     className={`nav_icons nav_expand ${
                       h == "" ? "desk_deg180" : ""
-                    } ${cl == "" ? "deg180" : ""}`}
+                    } ${cl == "" ? "mob_deg180" : ""}`}
                   />
                 </section>
-                <NavDropDown
-                  value={list}
-                  position={`${h == "" ? "" : "desk_fixed"} ${
-                    cl == "" ? "none" : "mob_position"
+                <section
+                  className={`${h == "" ? "" : "desk_drop_container"} ${
+                    cl == "" ? "mobile_hide" : "mobile_show"
                   }`}
-                  hover={h}
-                  click={cl}
-                />
+                  onMouseOver={() => {
+                    sh((h = "desk_nav_pad desk_flex"));
+                  }}
+                  onMouseOut={() => {
+                    sh((h = ""));
+                  }}
+                >
+                  <NavDropDown
+                    value={list}
+                    position={`${h == "" ? "" : "desk_fixed"} ${
+                      cl == "" ? "none" : "mob_position pointer"
+                    }`}
+                    hover={h}
+                    click={cl}
+                  />
+                </section>
               </section>
               <section className="row gap8 search_container mobile_hide">
                 <input
@@ -126,24 +138,33 @@ function Nav({ bagBoolean }) {
                 c == "" ? "mobile_show" : "mobile_hide"
               }`}
             >
-              <img
-                src={files.searchMobile}
-                alt="search"
-                className="class_icon none mobile_show"
-                onClick={() => {
-                  alert(getComputedStyle(ref.current).height);
-                }}
-              />
-              <img
-                src={files.profile}
-                alt="profile icon"
-                className="nav_icons"
-              />
-              <img
-                src={files.bag}
-                alt="bag icon"
-                className={`nav_icons ${bagBoolean ? "" : "none"}`}
-              />
+              <NavLink className="align_center" to={``}>
+                <img
+                  src={files.searchMobile}
+                  alt="search"
+                  className="class_icon none mobile_show"
+                  onClick={() => {
+                    alert(getComputedStyle(ref.current).height);
+                  }}
+                />
+              </NavLink>
+              <NavLink className="align_center" to={`/Account`}>
+                <img
+                  src={files.profile}
+                  alt="profile icon"
+                  className="nav_icons"
+                />
+              </NavLink>
+              <NavLink
+                to={`/Shop%20Our%20Bundles/My%20Cart/_Page_CartItems`}
+                className="align_center"
+              >
+                <img
+                  src={files.bag}
+                  alt="bag icon"
+                  className={`nav_icons ${bagBoolean ? "" : "none"}`}
+                />
+              </NavLink>
             </section>
           </section>
         </nav>
