@@ -607,6 +607,10 @@ img {
   padding-block: 16px;
   align-items: center;
 }
+.nav_bottom {
+  padding-block-end: 8px;
+  align-items: center;
+}
 
 .fixed {
   position: sticky;
@@ -877,7 +881,7 @@ a {
 }
 .bundles_cards {
   flex: 1;
-  min-width: 300px;
+  min-width: 330px;
   background: var(--white);
 }
 .bundle_name_grid {
@@ -1687,21 +1691,11 @@ li::marker {
 }
 @media screen and (max-width: 345px) {
   /*nav*/
-  .nav {
+  .none345{
+    display: none;
+  }
+  .nav{
     flex-wrap: wrap;
-    gap: 8px;
-    justify-content: center;
-    flex-direction: row-reverse;
-  }
-  .nav_icons_container {
-    /* gap: 25vw;*/
-    width: calc(100vw - 32px);
-    justify-content: space-between;
-  }
-  .hamburger_container {
-    gap: 24px;
-    /*width: calc(100vw - 32px);
-    justify-content: space-between;*/
   }
   /*nav*/
   /*productA*/
