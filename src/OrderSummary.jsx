@@ -9,9 +9,12 @@ function OrderSummary() {
   let counter = 0;
   let priceData = 0;
 
-  window.localStorage.getItem("productAstorage") != null &&
-  location.state == null
-    ? (cartData = JSON.parse(window.localStorage.getItem("productAstorage")))
+  window.localStorage.getItem("productAstorage") != null
+    ? JSON.parse(window.localStorage.getItem("productAstorage")).length === 0
+      ? window.localStorage.removeItem("productAstorage")
+      : (cartData = JSON.parse(window.localStorage.getItem("productAstorage")))
+    : location.state == null
+    ? ""
     : (cartData = location.state);
   let items = cartData.map((e) => (counter = counter + Number(e["quantity"])));
   let subTotal = cartData.map((e) => {

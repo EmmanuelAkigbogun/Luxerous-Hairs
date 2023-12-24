@@ -3,11 +3,14 @@ import data from "./assets/Bundles";
 export let cartQuantity = [];
 function CartItems() {
   let location = useLocation();
-  window.localStorage.getItem("productAstorage") != null &&
-  location.state == null
-    ? (cartQuantity = JSON.parse(
-        window.localStorage.getItem("productAstorage")
-      ))
+  window.localStorage.getItem("productAstorage") != null
+    ? JSON.parse(window.localStorage.getItem("productAstorage")).length === 0
+      ? window.localStorage.removeItem("productAstorage")
+      : (cartQuantity = JSON.parse(
+          window.localStorage.getItem("productAstorage")
+        ))
+    : location.state == null
+    ? ""
     : (cartQuantity = location.state);
   {
     cartQuantity.length == 0 ? console.log("no data") : "";

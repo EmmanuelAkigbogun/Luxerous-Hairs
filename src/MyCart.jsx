@@ -1,7 +1,6 @@
-import { Outlet, useLocation } from "react-router-dom";
+import { Outlet} from "react-router-dom";
 import OrderSummary from "./OrderSummary";
 function MyCart() {
-  let locatio=useLocation()
   return (
     <>
       <section className="my_cart parent_section">
@@ -9,9 +8,8 @@ function MyCart() {
           <Outlet />
         </section>
         <section className="cart_outlet_sibling">
-          <OrderSummary locatio={locatio}/>
+          <OrderSummary/>
         </section>
-        {console.log(locatio,78)}
       </section>
     </>
   );
