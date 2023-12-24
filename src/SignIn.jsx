@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import files from "./assets/files";
+import PasswordField from "./PasswordField";
 function SignIn() {
   return (
     <>
@@ -28,23 +29,11 @@ function SignIn() {
                 autoComplete="true"
               />
             </section>
-            <section className="column gap4">
-              <section>
-                <label htmlFor="email">Password *</label>
-              </section>
-              <section className="width100 row input_border align_center">
-                <input
-                  id="password"
-                  type="password"
-                  name="password-sign-in"
-                  placeholder="*************"
-                  className="width100 contact_input no_border"
-                  autoComplete="true"
-                />
-
-                <img src={files.eyeSlash} alt="" className="contact_input" />
-              </section>
-            </section>
+            <PasswordField
+              labelValue="Password"
+              forValue="password"
+              nameValue="password-sign-in"
+            />
           </section>
           <section className="j_center">
             <NavLink

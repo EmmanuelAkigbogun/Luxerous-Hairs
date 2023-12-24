@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import files from "./assets/files";
+import PasswordField from "./PasswordField";
 function ResetPassword() {
   return (
     <>
@@ -19,40 +20,16 @@ function ResetPassword() {
             </p>
           </section>
           <section className="column gap12">
-            <section className="column gap4">
-              <section>
-                <label htmlFor="password1">New Password *</label>
-              </section>
-              <section className="width100 row input_border align_center">
-                <input
-                  id="password1"
-                  name="password1-reset"
-                  type="password"
-                  placeholder="*************"
-                  className="width100 contact_input no_border"
-                  autoComplete="true"
-                />
-
-                <img src={files.eyeSlash} alt="" className="contact_input" />
-              </section>
-            </section>
-            <section className="column gap4">
-              <section>
-                <label htmlFor="password2">PRe-enter New Password *</label>
-              </section>
-              <section className="width100 row input_border align_center">
-                <input
-                  id="password2"
-                  name="password2-reset"
-                  type="password"
-                  placeholder="*************"
-                  className="width100 contact_input no_border"
-                  autoComplete="true"
-                />
-
-                <img src={files.eyeSlash} alt="" className="contact_input" />
-              </section>
-            </section>
+            <PasswordField
+              labelValue="New Password"
+              forValue="password1"
+              nameValue="password1-reset"
+            />
+            <PasswordField
+              labelValue="PRe-enter New Password"
+              forValue="password2"
+              nameValue="password2-reset"
+            />
           </section>
           <section className="column gap16">
             <button className="row gap10 button button0 black width100">
