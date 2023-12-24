@@ -3,7 +3,7 @@ import files from "../assets/files";
 function Hero() {
   return (
     <>
-      <section className="hero gray row after_nav">
+      <section className="hero gray row">
         <section className="hero_image_container">
           <img src={files.heroImage} alt="" className="hero_image" />
         </section>

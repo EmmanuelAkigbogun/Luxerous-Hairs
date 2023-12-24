@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import files from "../assets/files";
 import { NavDropDown } from "./NavDropDown";
 let list = [
@@ -13,12 +13,17 @@ let list = [
 //     click=""
 function Nav({ bagBoolean }) {
   let ref = useRef(null);
+  let location = useLocation();
+  let [se, sse] = useState("mobile_hide");
   let [h, sh] = useState("");
   let [c, sc] = useState("");
   let [cl, scl] = useState("");
+  window.onclick = (e) => {
+    c == "" ? "" : !ref.current.contains(e.target) && sc((c = ""));
+  };
   return (
     <>
-      <section
+      <header
         className={`fixed ${c == "" ? "" : "mob_80vh mob_overflow "}`}
         ref={ref}
       >
@@ -74,7 +79,9 @@ function Nav({ bagBoolean }) {
                       cl == "" ? "none" : "mob_position pointer"
                     }`}
                     hover={h}
+                    close={c}
                     click={cl}
+                    setClose={sc}
                   />
                 </section>
               </section>
@@ -105,7 +112,14 @@ function Nav({ bagBoolean }) {
                 sc((c = "love"));
               }}
             />
-            <NavLink to="/" className="heading heading3">
+            <NavLink
+              to="/"
+              className="heading heading3"
+              onClick={() => {
+                window.scrollTo(0, 0);
+                c == "" ? "" : sc((c = ""));
+              }}
+            >
               Luxurious Hair
             </NavLink>
             <img
@@ -130,6 +144,10 @@ function Nav({ bagBoolean }) {
               mobile_hide
               ${c == "" ? "" : "mobile_show"}
               `}
+              onClick={() => {
+                window.scrollTo(0, 0);
+                c == "" ? "" : sc((c = ""));
+              }}
             >
               Contact Us
             </NavLink>
@@ -138,17 +156,26 @@ function Nav({ bagBoolean }) {
                 c == "" ? "mobile_show" : "mobile_hide"
               }`}
             >
-              <NavLink className="align_center" to={``}>
+              <section className="align_center">
                 <img
                   src={files.searchMobile}
                   alt="search"
                   className="class_icon none mobile_show"
                   onClick={() => {
-                    alert(getComputedStyle(ref.current).height);
+                    se == "mobile_hide"
+                      ? sse((se = "mobile_show"))
+                      : sse((se = "mobile_hide"));
                   }}
                 />
-              </NavLink>
-              <NavLink className="align_center" to={`/Account`}>
+              </section>
+              <NavLink
+                className="align_center"
+                to={`/Account`}
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                  c == "" ? "" : sc((c = ""));
+                }}
+              >
                 <img
                   src={files.profile}
                   alt="profile icon"
@@ -157,18 +184,30 @@ function Nav({ bagBoolean }) {
               </NavLink>
               <NavLink
                 to={`/Shop%20Our%20Bundles/My%20Cart/_Page_CartItems`}
-                className="align_center"
+                className={`align_center  ${bagBoolean ? "" : "none"}`}
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                  c == "" ? "" : sc((c = ""));
+                }}
               >
-                <img
-                  src={files.bag}
-                  alt="bag icon"
-                  className={`nav_icons ${bagBoolean ? "" : "none"}`}
-                />
+                <img src={files.bag} alt="bag icon" className={`nav_icons`} />
               </NavLink>
             </section>
           </section>
         </nav>
-      </section>
+        <section className={`parent_section nav none width100 ${se}`}>
+          <section className="row gap8 search_container width100">
+            <input
+              type="search"
+              placeholder="Search Products"
+              className="search_input search_input1"
+            />
+            <section className="search_image_container black_search">
+              <img src={files.search} alt="search" className="nav_icons" />
+            </section>
+          </section>
+        </section>
+      </header>
     </>
   );
 }

@@ -8,7 +8,7 @@ export let Location = () => {
 
   return (
     <>
-      <section className="after_nav column gap8 parent_section location">
+      <section className="column gap8 parent_section location">
         <h1 className="heading heading1">
           {location.pathname
             .replaceAll("%20", " ")

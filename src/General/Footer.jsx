@@ -14,7 +14,12 @@ function Footer() {
       <footer className="parent_section footer">
         <section className="gap32 column footer_child1">
           <section className="gap8 column">
-            <NavLink className="heading heading3">
+            <NavLink
+              className="heading heading3"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+            >
               <h3>Luxurious Hair</h3>
             </NavLink>
             <p className="paragraph pragraph2">
@@ -40,6 +45,9 @@ function Footer() {
                   key={e}
                   className="paragraph pragraph2"
                   to={`/Shop%20Our%20Bundles/${e}`}
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                  }}
                 >
                   {e}
                 </NavLink>
@@ -54,7 +62,13 @@ function Footer() {
           <section className="column gap12">
             <p className="paragraph pragraph2"> Take Home Care</p>
             <p className="paragraph pragraph2">Shipping Policy</p>
-            <NavLink to="/Contact Us" className="paragraph paragraph2">
+            <NavLink
+              to="/Contact Us"
+              className="paragraph paragraph2"
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+            >
               Contact Us
             </NavLink>
             <p className="paragraph pragraph2">Terms and Conditions</p>
