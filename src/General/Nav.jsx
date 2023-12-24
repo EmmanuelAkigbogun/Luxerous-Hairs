@@ -114,7 +114,7 @@ function Nav({ bagBoolean }) {
             />
             <NavLink
               to="/"
-              className="heading heading3"
+              className="heading heading3 none345"
               onClick={() => {
                 window.scrollTo(0, 0);
                 c == "" ? "" : sc((c = ""));
@@ -195,7 +195,7 @@ function Nav({ bagBoolean }) {
             </section>
           </section>
         </nav>
-        <section className={`parent_section nav none width100 ${se}`}>
+        <section className={`parent_section nav_bottom none width100 ${se}`}>
           <section className="row gap8 search_container width100">
             <input
               type="search"
