@@ -18,13 +18,19 @@ function Shipping() {
           <section>
             <label htmlFor="names2">Country *</label>
           </section>
-          <select name="" id="names2" className="input_border contact_input white_bg">
-            <option value="">Option</option>
-            <option value="">Nigeria</option>
-            <option value="">Canada</option>
-            <option value="">Algeria</option>
-            <option value="">Liberia</option>
-          </select>
+          <section className="select_input input_border">
+            <select
+              name=""
+              id="names2"
+              className="no_border contact_input1 white_bg width100"
+            >
+              <option value="">Option</option>
+              <option value="">Nigeria</option>
+              <option value="">Canada</option>
+              <option value="">Algeria</option>
+              <option value="">Liberia</option>
+            </select>
+          </section>
         </section>
       </section>
       <section className="gap12 row mobile_column">
@@ -43,13 +49,19 @@ function Shipping() {
           <section>
             <label htmlFor="names4">State *</label>
           </section>
-          <select name="" id="names4" className="input_border contact_input white_bg">
-            <option value="">Option</option>
-            <option value="">Osun</option>
-            <option value="">Ogun</option>
-            <option value="">Abuja</option>
-            <option value="">Imo</option>
-          </select>
+          <section className="select_input input_border">
+            <select
+              name=""
+              id="names4"
+              className="no_border contact_input1 white_bg width100"
+            >
+              <option value="">Option</option>
+              <option value="">Osun</option>
+              <option value="">Ogun</option>
+              <option value="">Abuja</option>
+              <option value="">Imo</option>
+            </select>
+          </section>
         </section>
       </section>
       <section className="gap12 row mobile_column">
@@ -68,13 +80,19 @@ function Shipping() {
           <section>
             <label htmlFor="names6">City *</label>
           </section>
-          <select name="" id="names6" className="input_border contact_input white_bg">
-            <option value="">Option</option>
-            <option value="">New York</option>
-            <option value="">Vague</option>
-            <option value="">Dark</option>
-            <option value="">Gotham</option>
-          </select>
+          <section className="select_input input_border">
+            <select
+              name=""
+              id="names6"
+              className="no_border contact_input1 white_bg width100"
+            >
+              <option value="">Option</option>
+              <option value="">New York</option>
+              <option value="">Vague</option>
+              <option value="">Dark</option>
+              <option value="">Gotham</option>
+            </select>
+          </section>
         </section>
       </section>
       <section className="gap12 row mobile_column">

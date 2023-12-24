@@ -79,11 +79,6 @@ body::-webkit-scrollbar,
 .mob_overflow::-webkit-scrollbar {
   display: none;
 }
-
-.after_nav {
-  margin-top: 80px;
-}
-
 .label_child {
   width: 12px;
   height: 12px;
@@ -444,7 +439,6 @@ body::-webkit-scrollbar,
   align-items: center;
 }
 
-
 .align_start {
   display: flex;
   align-items: start;
@@ -564,7 +558,7 @@ img {
   object-fit: contain;
   object-position: bottom;
 }
-.pointer{
+.pointer {
   cursor: pointer;
 }
 /*general*/
@@ -615,7 +609,7 @@ img {
 }
 
 .fixed {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   background: var(--white);
@@ -791,7 +785,7 @@ a {
 .section_d_child {
   padding-block: 40px;
 }
-.d_child_child{
+.d_child_child {
   width: 65%;
 }
 /*section d*/
@@ -827,6 +821,11 @@ a {
 /*ccontact*/
 .contact_input {
   padding: 12px;
+  min-height: 48px;
+}
+.select_input {
+  padding-inline-end: 12px;
+  min-height: 48px;
 }
 .contact_input1 {
   padding-block: 12px;
@@ -871,11 +870,15 @@ a {
   flex-direction: row;
   gap: 30px;
   flex-wrap: wrap;
+  padding-block-end: 80px;
 }
-
+.bundles_d {
+  padding-block-end: 57px;
+}
 .bundles_cards {
   flex: 1;
   min-width: 300px;
+  background: var(--white);
 }
 .bundle_name_grid {
   padding-block-end: 110px;
@@ -1113,10 +1116,6 @@ li::marker {
 /*admin add images*/
 @media screen and (max-width: 1200px) {
   /*general*/
-  .after_nav {
-    margin-top: 62px;
-  }
-
   .heading1 {
     font-size: 32px;
     font-weight: 400;
@@ -1146,7 +1145,6 @@ li::marker {
     position: relative;
     width: auto;
     height: auto;
-
   }
   .desk_flex {
     display: none;
@@ -1275,7 +1273,7 @@ li::marker {
   }
 
   /*section b*/
-    /*footer*/
+  /*footer*/
   .footer {
     flex-direction: column;
     gap: 32px;
@@ -1302,6 +1300,12 @@ li::marker {
   /*bundle name*/
   .bundle_name_grid {
     padding-block-end: 24px;
+  }
+  .bundles_grid {
+    padding-block-end: 40px;
+  }
+  .bundles_d {
+    padding-block-end: 0px;
   }
   /*bundles*/
   /*product*/
@@ -1585,9 +1589,9 @@ li::marker {
   .d_child {
     align-items: flex-start;
   }
-.d_child_child{
-  width: auto;
-}
+  .d_child_child {
+    width: auto;
+  }
   /*contact*/
   .contact {
     padding-inline: 16px;
@@ -1685,7 +1689,7 @@ li::marker {
   /*nav*/
   .nav {
     flex-wrap: wrap;
-
+    gap: 8px;
     justify-content: center;
     flex-direction: row-reverse;
   }
@@ -1698,9 +1702,6 @@ li::marker {
     gap: 24px;
     /*width: calc(100vw - 32px);
     justify-content: space-between;*/
-  }
-  .after_nav {
-    margin-top: 94px;
   }
   /*nav*/
   /*productA*/

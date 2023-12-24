@@ -1,20 +1,18 @@
 import { NavLink } from "react-router-dom";
 import SectionD from "./Home/SectionD.jsx";
 import data from "./assets/Bundles.js";
-let num = 0;
+
 function Bundles() {
-  num++;
   return (
     <>
       <section className="parent_section">
         <section className="row gap30 bundles_grid">
           {data.map((a, i) => {
-            return (
+            return i < 9 ? (
               <section className="bundles_cards relative" key={a.image + i}>
                 <NavLink
                   className="card_image"
                   to={a.text + "/_Page1"}
-                  state={num % 2 == 0 ? { love: "red" } : { love: "blue" }}
                   onClick={() => {
                     window.scrollTo(0, 0);
                   }}
@@ -43,11 +41,15 @@ function Bundles() {
                   </section>
                 </section>
               </section>
+            ) : (
+              ""
             );
           })}
         </section>
       </section>
-      <SectionD />
+      <section className="bundles_d">
+        <SectionD />
+      </section>
       {console.log(data, 351)}
     </>
   );

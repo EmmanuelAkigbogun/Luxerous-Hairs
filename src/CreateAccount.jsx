@@ -3,7 +3,7 @@ function CreateAccount() {
   return (
     <>
       <section className="parent_section">
-        <section className="after_nav page_band">
+        <section className="page_band">
           <h1 className="heading heading1">My Account</h1>
         </section>
         <Outlet />

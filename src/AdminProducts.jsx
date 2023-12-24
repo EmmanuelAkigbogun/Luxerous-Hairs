@@ -24,19 +24,21 @@ function AdminProducts() {
               <img src={files.search} alt="search" className="nav_icons" />
             </section>
           </section>
-          <select
-            onChange={(e) => {
-              se((s = e.target.value));
-            }}
-            className="input_border contact_input white_bg"
-          >
-            <option value="Raw Straight Type 1">Raw Straight Type 1</option>
-            <option value="Raw Straight Type 2">Raw Straight Type 2</option>
-            <option value="Raw Straight Type 3">Raw Straight Type 3</option>
-            <option value="Raw Straight Type 4">Raw Straight Type 4</option>
-            <option value="Raw Straight Type 5">Raw Straight Type 5</option>
-            <option value="Raw Straight Type 6">Raw Straight Type 6</option>
-          </select>
+          <section className="select_input input_border">
+            <select
+              onChange={(e) => {
+                se((s = e.target.value));
+              }}
+              className="no_border contact_input1 white_bg"
+            >
+              <option value="Raw Straight Type 1">Raw Straight Type 1</option>
+              <option value="Raw Straight Type 2">Raw Straight Type 2</option>
+              <option value="Raw Straight Type 3">Raw Straight Type 3</option>
+              <option value="Raw Straight Type 4">Raw Straight Type 4</option>
+              <option value="Raw Straight Type 5">Raw Straight Type 5</option>
+              <option value="Raw Straight Type 6">Raw Straight Type 6</option>
+            </select>
+          </section>
         </section>
         {console.log(s)}
         <section>
@@ -56,7 +58,7 @@ function AdminProducts() {
             return (
               <Grid
                 data={data
-                  .filter((f) => f.text == s )[0]
+                  .filter((f) => f.text == s)[0]
                   .content.slice(n + k * i, n + k * (i + 1))}
                 key={String(Math.random()).slice(2, 8)}
                 bundlename={s}

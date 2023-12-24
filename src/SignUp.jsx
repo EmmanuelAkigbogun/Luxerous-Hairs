@@ -4,7 +4,14 @@ function SignUp() {
   return (
     <>
       <section className="j_center">
-        <section className="gap24 column sign_up  white_bg">
+        <form
+          className="gap24 column sign_up  white_bg"
+          onSubmit={(e) => {
+            e.preventDefault();
+            let formData = new FormData(e.target);
+            console.log(Object.fromEntries(formData.entries()));
+          }}
+        >
           <h2 className="heading heading2_small j_center">Sign Up</h2>
           <section className="column gap12">
             <section className="column gap4">
@@ -14,8 +21,10 @@ function SignUp() {
               <input
                 id="name"
                 type="text"
+                name="name-sign-up"
                 placeholder="Jane"
                 className="contact_input input_border"
+                autoComplete="true"
               />
             </section>
             <section className="column gap4">
@@ -26,8 +35,10 @@ function SignUp() {
               <input
                 id="email"
                 type="email"
+                name="email-sign-up"
                 placeholder="janejennygmail.com"
                 className="contact_input input_border"
+                autoComplete="true"
               />
             </section>
             <section className="column gap4">
@@ -38,8 +49,10 @@ function SignUp() {
                 <input
                   id="password"
                   type="password"
+                  name="password-sign-up"
                   placeholder="*************"
                   className="width100 contact_input no_border"
+                  autoComplete="true"
                 />
 
                 <img src={files.eyeSlash} alt="" className="contact_input" />
@@ -58,9 +71,9 @@ function SignUp() {
           </section>
           <section className="gap32 column">
             <section>
-              <NavLink className="row gap10 button button0 black width100">
+              <button className="row gap10 button button0 black width100">
                 Sign Up <img src={files.arrowRight} alt="" />
-              </NavLink>
+              </button>
             </section>
             <section className="gap16 column align_center width100">
               <section className="gap24 row flex_wrap j_center">
@@ -94,7 +107,7 @@ function SignUp() {
               </section>
             </section>
           </section>
-        </section>
+        </form>
       </section>
     </>
   );

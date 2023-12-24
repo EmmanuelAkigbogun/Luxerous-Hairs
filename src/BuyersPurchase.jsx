@@ -3,7 +3,7 @@ import { Location } from "./General/Location";
 function BuyersPurchase() {
   return (
     <>
-      <section className="after_nav whitish">
+      <section className="whitish">
         <Location />
         <Outlet/>
       </section>

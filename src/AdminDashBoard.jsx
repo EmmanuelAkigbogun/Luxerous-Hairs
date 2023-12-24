@@ -9,30 +9,36 @@ function AdminDashBoard() {
             <p className="paragraph paragraph2 paragraph_bold">View For:</p>
           </section>
           <section className="gap12 row flex1 mobile_column600">
-            <select
-              name=""
-              id=""
-              className="input_border contact_input white_bg"
+            <section
+              className="select_input input_border"
               style={{ width: "40%" }}
             >
-              <option value="">7 days</option>
-              <option value="">1 weeks</option>
-              <option value="">2 weeks</option>
-              <option value="">3 weeks</option>
-              <option value="">2 month</option>
-            </select>
-            <select
-              name=""
-              id=""
-              className="input_border contact_input white_bg width100"
-            >
-              <option value="">Raw Straight Type 1</option>
-              <option value="">Raw Straight Type 2</option>
-              <option value="">Raw Straight Type 3</option>
-              <option value="">Raw Straight Type 4</option>
-              <option value="">Raw Straight Type 5</option>
-              <option value="">Raw Straight Type 6</option>
-            </select>
+              <select
+                name=""
+                id=""
+                className="no_border contact_input1 white_bg width100"
+              >
+                <option value="">7 days</option>
+                <option value="">1 weeks</option>
+                <option value="">2 weeks</option>
+                <option value="">3 weeks</option>
+                <option value="">2 month</option>
+              </select>
+            </section>
+            <section className="select_input input_border width100">
+              <select
+                name=""
+                id=""
+                className="no_border contact_input1 white_bg width100"
+              >
+                <option value="">Raw Straight Type 1</option>
+                <option value="">Raw Straight Type 2</option>
+                <option value="">Raw Straight Type 3</option>
+                <option value="">Raw Straight Type 4</option>
+                <option value="">Raw Straight Type 5</option>
+                <option value="">Raw Straight Type 6</option>
+              </select>
+            </section>
           </section>
         </section>
         <section className="black_grids gap10 row">
@@ -67,23 +73,27 @@ function AdminDashBoard() {
                     <p className="paragraph paragraph2 paragraph_bold">Show:</p>
                   </section>
                   <section className="gap12 row flex1 mobile_column375">
-                    <select
-                      name=""
-                      id=""
-                      className="input_border contact_input white_bg"
-                    >
-                      <option value="">1 years</option>
-                      <option value="">2 years</option>
-                    </select>
-                    <select
-                      name=""
-                      id=""
-                      className="input_border contact_input white_bg width100"
-                    >
-                      <option value="">Sales</option>
-                      <option value="">Orders</option>
-                      <option value="">Products</option>
-                    </select>
+                    <section className="select_input input_border width100">
+                      <select
+                        name=""
+                        id=""
+                        className="no_border contact_input1 white_bg width100"
+                      >
+                        <option value="">1 years</option>
+                        <option value="">2 years</option>
+                      </select>
+                    </section>
+                    <section className="select_input input_border width100">
+                      <select
+                        name=""
+                        id=""
+                        className="no_border contact_input1 white_bg width100"
+                      >
+                        <option value="">Sales</option>
+                        <option value="">Orders</option>
+                        <option value="">Products</option>
+                      </select>
+                    </section>
                   </section>
                 </section>
               </section>

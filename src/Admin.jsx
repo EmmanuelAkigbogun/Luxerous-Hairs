@@ -13,7 +13,7 @@ function Admin() {
       <Header bagBoolean={false} />
       <section className="parent_section">
         <section
-          className={`after_nav page_band ${
+          className={`page_band ${
             location.pathname.endsWith("Admin") ||
             location.pathname.replaceAll("%20", " ").endsWith("My Dashboard") ||
             location.pathname.replaceAll("%20", " ").endsWith("Testimonials")

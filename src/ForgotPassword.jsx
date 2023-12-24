@@ -1,10 +1,19 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import files from "./assets/files";
 function ForgotPassword() {
+  let navigate = useNavigate();
   return (
     <>
       <section className="j_center">
-        <section className="gap24 column sign_up  white_bg">
+        <form
+          className="gap24 column sign_up  white_bg"
+          onSubmit={(e) => {
+            e.preventDefault();
+            let formData = new FormData(e.target);
+            console.log(Object.fromEntries(formData.entries()));
+            navigate(`/Account/Reset%20Password`);
+          }}
+        >
           <section>
             <h2 className="heading heading2_small j_center">Enter Email</h2>
             <p className="paragraph paragraph2 text_center">
@@ -19,6 +28,7 @@ function ForgotPassword() {
 
               <input
                 id="email"
+                name="email-forgot"
                 type="email"
                 placeholder="janejennygmail.com"
                 className="contact_input input_border"
@@ -27,12 +37,9 @@ function ForgotPassword() {
           </section>
           <section className="gap32 column">
             <section className="column gap16">
-              <NavLink
-                className="row gap10 button button0 black width100"
-                to={`/Account/Reset%20Password`}
-              >
+              <button className="row gap10 button button0 black width100">
                 Sign In <img src={files.arrowRight} alt="" />
-              </NavLink>
+              </button>
               <NavLink className="row gap10 button button0 border white_bg width100">
                 Cancel
               </NavLink>
@@ -70,7 +77,7 @@ function ForgotPassword() {
               </section>
             </section>
           </section>
-        </section>
+        </form>
       </section>
     </>
   );

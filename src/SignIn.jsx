@@ -4,7 +4,14 @@ function SignIn() {
   return (
     <>
       <section className="j_center">
-        <section className="gap24 column sign_up  white_bg">
+        <form
+          className="gap24 column sign_up  white_bg"
+          onSubmit={(e) => {
+            e.preventDefault();
+            let formData = new FormData(e.target);
+            console.log(Object.fromEntries(formData.entries()));
+          }}
+        >
           <h2 className="heading heading2_small j_center">Sign In</h2>
           <section className="column gap12">
             <section className="column gap4">
@@ -15,8 +22,10 @@ function SignIn() {
               <input
                 id="email"
                 type="email"
+                name="email-sign-in"
                 placeholder="janejennygmail.com"
                 className="contact_input input_border"
+                autoComplete="true"
               />
             </section>
             <section className="column gap4">
@@ -27,8 +36,10 @@ function SignIn() {
                 <input
                   id="password"
                   type="password"
+                  name="password-sign-in"
                   placeholder="*************"
                   className="width100 contact_input no_border"
+                  autoComplete="true"
                 />
 
                 <img src={files.eyeSlash} alt="" className="contact_input" />
@@ -46,9 +57,9 @@ function SignIn() {
           </section>
           <section className="gap32 column">
             <section>
-              <NavLink className="row gap10 button button0 black width100">
+              <button className="row gap10 button button0 black width100">
                 Sign In <img src={files.arrowRight} alt="" />
-              </NavLink>
+              </button>
             </section>
             <section className="gap16 column align_center width100">
               <section className="gap24 row flex_wrap j_center">
@@ -82,7 +93,7 @@ function SignIn() {
               </section>
             </section>
           </section>
-        </section>
+        </form>
       </section>
     </>
   );
