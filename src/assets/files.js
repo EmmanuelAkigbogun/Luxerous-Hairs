@@ -66,6 +66,7 @@ import pay4 from "./pay4.svg";
 import edit from "./edit.svg";
 import line from "./line.svg";
 import eyeSlash from "./eye-slash.svg";
+import eye from "./eye.svg";
 import circleCheck from "./circle_check.svg";
 import google from "./google.svg";
 import faceBook from "./face-book.svg";
@@ -102,6 +103,7 @@ export default {
   pay1: pay1,
   circleCheck: circleCheck,
   eyeSlash: eyeSlash,
+  eye: eye,
   line: line,
   edit: edit,
   pay2: pay2,
