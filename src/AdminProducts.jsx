@@ -29,7 +29,7 @@ function AdminProducts() {
               onChange={(e) => {
                 se((s = e.target.value));
               }}
-              className="no_border contact_input1 white_bg"
+              className="no_border contact_input1 white_bg width100600"
             >
               <option value="Raw Straight Type 1">Raw Straight Type 1</option>
               <option value="Raw Straight Type 2">Raw Straight Type 2</option>
