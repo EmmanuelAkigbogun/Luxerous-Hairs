@@ -19,7 +19,7 @@ function Admin() {
             location.pathname.replaceAll("%20", " ").endsWith("Testimonials")
               ? "outlet_box"
               : ""
-          } row space_between`}
+          } row space_between whitish`}
           style={{ flexWrap: "wrap", flexShrink: "1%" }}
         >
           <h1 className="heading heading1">Admin</h1>
@@ -49,7 +49,7 @@ function Admin() {
           directory="Admin"
         />
         <Outlet />
-        <section>
+        <section className="log_out_pad">
           <h3 className="heading heading3 heading3_small">Log Out</h3>
         </section>
       </section>

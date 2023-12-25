@@ -3,7 +3,9 @@ import OrderDetailsMain from "./OrderDetailsMain";
 function AdminOrders() {
   return (
     <>
-      <section className="outlet_box column">
+      <section
+        className="outlet_box column log_out_pad_order"
+      >
         <section className="gap12 row mobile_column900">
           <section className="j_end flex1 align_center">
             <p className="paragraph paragraph2 paragraph_bold">View For:</p>

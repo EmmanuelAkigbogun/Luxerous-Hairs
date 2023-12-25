@@ -43,18 +43,27 @@ function AddTestimonials() {
             </section>
           </section>
           <section className="flex1 gap16 column">
-            <section className="gap24  mobile_column_tiny row flex_wrap">
+            <section className="gap24  mobile_column_tiny row flex_wrap mobile_gap16">
               <section className="flex1 j_center">
                 <UploadCard />
               </section>
               <section className="flex1 j_center">
-                <UploadedImages booleanas={false} image={files.brunetteSmiling} />
+                <UploadedImages
+                  booleanas={false}
+                  image={files.brunetteSmiling}
+                />
               </section>
               <section className="flex1 j_center">
-                <UploadedImages booleanas={false} image={files.brunetteSmiling} />
+                <UploadedImages
+                  booleanas={false}
+                  image={files.brunetteSmiling}
+                />
               </section>
               <section className="flex1 j_center">
-                <UploadedImages booleanas={false} image={files.brunetteSmiling} />
+                <UploadedImages
+                  booleanas={false}
+                  image={files.brunetteSmiling}
+                />
               </section>
             </section>
             <section className="gap32 column">

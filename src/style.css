@@ -1066,6 +1066,9 @@ li::marker {
   gap: 24px;
   background: var(--white);
 }
+.whitish {
+  background: var(--background-Color);
+}
 .thead {
   background: var(--text-color1);
 }
@@ -1132,11 +1135,20 @@ li::marker {
 .log_out_pad_analytics {
   margin-block-end: 150px;
 }
-.log_out_pad_description{
+.log_out_pad_description {
   margin-block-end: 254px;
 }
-.log_out_pad_image{
+.log_out_pad_image {
   margin-block-end: 208px;
+}
+.log_out_pad_order {
+  margin-block-end: 16px;
+}
+.log_out_pad_testimonial{
+  margin-block-end: 48px;
+}
+.log_out_pad{
+  padding-block-end: 48px;
 }
 /*admin add images*/
 @media screen and (max-width: 1200px) {
@@ -1395,6 +1407,9 @@ li::marker {
   .mobile_column1200 {
     flex-direction: column;
   }
+  .log_out_pad_mobile{
+  margin-block-end: 32px;
+}
 }
 @media screen and (max-width: 1111px) {
   .review_column {
@@ -1431,6 +1446,9 @@ li::marker {
 }
 
 @media screen and (max-width: 900px) {
+  .mobile_gap16{
+    gap: 16px;
+  }
   .mobile_column900 {
     flex-direction: column;
   }

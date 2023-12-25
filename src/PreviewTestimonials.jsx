@@ -6,7 +6,7 @@ function PreviewTestimonials() {
     <>
       <section className="gap32 column">
         <section>
-          <SectionBChild />
+          <SectionBChild gaps="gap40"/>
         </section>
         <section className="j_end gap16 flex_wrap">
           <NavLink
