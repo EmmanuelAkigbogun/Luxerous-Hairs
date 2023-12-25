@@ -3,7 +3,7 @@ import files from "./assets/files";
 function AdminDashBoard() {
   return (
     <>
-      <section className="outlet_box padding0 column">
+      <section className="outlet_box padding0 column log_out_mobile log_out_pad_dash white_bg">
         <section className="gap12 row mobile_column900">
           <section className="j_end flex1 align_center">
             <p className="paragraph paragraph2 paragraph_bold">View For:</p>
@@ -62,7 +62,7 @@ function AdminDashBoard() {
           />
         </section>
         <section className="gap24 row mobile_column">
-          <section className="card_padding16 align_center width100 padding0">
+          <section className="card_padding16 align_center width100 padding0 whitish">
             <section className="gap16 column width100 padding0">
               <section className="space_between mobile_column900">
                 <p className="paragraph paragraph0 paragraph_bold align_center">
@@ -102,24 +102,24 @@ function AdminDashBoard() {
               </section>
             </section>
           </section>
-          <section className="card_padding gap24 column">
+          <section className="card_padding gap24 column whitish">
             <p className="paragraph paragraph0 paragraph_bold">
               Best Performing Products
             </p>
             <section className="gap16 column width100">
-              <section className="gap12 row align_center">
+              <section className="gap12 row align_center white_bg">
                 <img src={files.seller3} alt="" className="product_img_small" />
                 <p className="paragraph paragraph2">
                   This is the name of the product 1
                 </p>
               </section>
-              <section className="gap12 row align_center">
+              <section className="gap12 row align_center white_bg">
                 <img src={files.seller3} alt="" className="product_img_small" />
                 <p className="paragraph paragraph2">
                   This is the name of the product 2
                 </p>
               </section>
-              <section className="gap12 row align_center">
+              <section className="gap12 row align_center white_bg">
                 <img src={files.seller3} alt="" className="product_img_small" />
                 <p className="paragraph paragraph2">
                   This is the name of the product 3

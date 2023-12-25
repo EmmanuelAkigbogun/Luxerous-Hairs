@@ -1,7 +1,8 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import files from "./assets/files";
 import PasswordField from "./PasswordField";
 function SignIn() {
+  let navigate = useNavigate();
   return (
     <>
       <section className="j_center">
@@ -11,6 +12,19 @@ function SignIn() {
             e.preventDefault();
             let formData = new FormData(e.target);
             console.log(Object.fromEntries(formData.entries()));
+            formData.get("email-sign-in") == "emmanuelakigbogun@gmail.com" &&
+            formData.get("password-sign-in") == "love"
+              ? navigate("/admin")
+              : formData.get("email-sign-in") ==
+                  "emmanuelakigbogun@gmail.com" &&
+                formData.get("password-sign-in")=="hate"
+              ? navigate("/")
+              : navigate("/Account/Sign Up");
+            {
+              console.log(
+                formData.get("password-sign-in")["password-sign-in"] == "adamas"
+              );
+            }
           }}
         >
           <h2 className="heading heading2_small j_center">Sign In</h2>

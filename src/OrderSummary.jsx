@@ -1,21 +1,17 @@
 import files from "./assets/files";
 import { NavLink, useLocation, useParams } from "react-router-dom";
 import data from "./assets/Bundles";
-let cartData = [];
+import { cartQuantity } from "./CartItems";
 function OrderSummary() {
+  let cartData = [];
   let location = useLocation();
-  let { par } = useParams();
-  let dia = useParams();
   let counter = 0;
   let priceData = 0;
-
-  window.localStorage.getItem("productAstorage") != null
-    ? JSON.parse(window.localStorage.getItem("productAstorage")).length === 0
-      ? window.localStorage.removeItem("productAstorage")
-      : (cartData = JSON.parse(window.localStorage.getItem("productAstorage")))
-    : location.state == null
-    ? ""
-    : (cartData = location.state);
+  cartQuantity.length == 0
+    ? window.localStorage.getItem("productAstorage") != null
+      ? (cartData = JSON.parse(window.localStorage.getItem("productAstorage")))
+      : (cartData = cartQuantity)
+    : (cartData = cartQuantity);
   let items = cartData.map((e) => (counter = counter + Number(e["quantity"])));
   let subTotal = cartData.map((e) => {
     return (priceData =

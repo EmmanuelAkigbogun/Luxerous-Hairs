@@ -7,7 +7,7 @@ function AdminAddDescription() {
 
   return (
     <>
-      <section className="outlet_box padding0 column">
+      <section className="outlet_box padding0 column log_out_mobile log_out_pad_description">
         <section className="row gap24 mobile_column900">
           <section className="column gap24 flex1">
             <section className="card_padding16 gap16 column whitish">

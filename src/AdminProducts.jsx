@@ -10,7 +10,7 @@ function AdminProducts() {
   let m = 0;
   return (
     <>
-      <section className="outlet_box100 gap24 column">
+      <section className="outlet_box100 gap24 column log_out_mobile log_out_pad_products">
         <section className="white_bg gap48 row mobile_column600">
           <section className="row gap8 search_container width100">
             <section className="width100 row">

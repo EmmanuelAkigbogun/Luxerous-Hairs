@@ -1,5 +1,5 @@
 import files from "./assets/files";
-function UploadedImages({ booleanas }) {
+function UploadedImages({ booleanas, image }) {
   return (
     <>
       <section className=" align_center j_center relative border-rad8 border width100">
@@ -11,7 +11,7 @@ function UploadedImages({ booleanas }) {
           ""
         )}
         <img
-          src={files.seller2}
+          src={image}
           alt="product"
           className="gray uploaded_image border-rad8"
         />

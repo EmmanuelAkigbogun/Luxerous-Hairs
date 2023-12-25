@@ -5,7 +5,7 @@ import UploadedImages from "./UploadedImages";
 function AdminAddImages() {
   return (
     <>
-      <section className="outlet_box70 column">
+      <section className="outlet_box70 column log_out_mobile log_out_pad_image">
         <section className="gap16 column">
           <section className="gap8 column">
             <h3 className="heading heading3_small">Images and Videos</h3>
@@ -19,13 +19,13 @@ function AdminAddImages() {
               <UploadCard />
             </section>
             <section className="flex1">
-              <UploadedImages booleanas={true} />
+              <UploadedImages booleanas={true} image={files.seller2} />
             </section>
             <section className="flex1">
-              <UploadedImages booleanas={false} />
+              <UploadedImages booleanas={false} image={files.seller2} />
             </section>
             <section className="flex1">
-              <UploadedImages booleanas={false} />
+              <UploadedImages booleanas={false} image={files.seller2} />
             </section>
           </section>
         </section>

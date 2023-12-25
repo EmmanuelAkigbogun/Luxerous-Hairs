@@ -5,7 +5,7 @@ function ViewAnalytics() {
   let location = useLocation();
   return (
     <>
-      <section className="outlet_box70 column">
+      <section className="outlet_box70 column log_out_mobile log_out_pad_analytics">
         <section className="space_between white_bg gap24 flex_wrap">
           <NavLink
             className={`gap10 align_center row_reverse j_end`}
@@ -39,7 +39,7 @@ function ViewAnalytics() {
             width="width100"
           />
         </section>
-        <section className="card_padding16 align_center width100 padding0">
+        <section className="card_padding16 align_center width100 padding0 whitish">
           <section className="gap16 column width100 padding0">
             <section className="space_between mobile_column900">
               <p className="paragraph paragraph0 paragraph_bold align_center">

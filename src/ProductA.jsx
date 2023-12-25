@@ -1,21 +1,24 @@
 import { NavLink, useLocation, useParams } from "react-router-dom";
 import files from "./assets/files";
 import data from "./assets/Bundles";
-let dataObject = [];
-let defaultQuantity = 1;
-let boolean = true;
+import { cartQuantity } from "./CartItems";
 function ProductA() {
+  let dataObject = [];
+  let boolean = true;
   let Obj = {};
   let dia = useParams();
   let { par } = useParams();
   let location = useLocation();
   Obj["length"] = 10;
   Obj["id"] = par + "$starJet" + dia["dia"];
-  Obj["quantity"] = defaultQuantity;
-  window.localStorage.getItem("productAstorage") != null &&
-  dataObject.length == 0
-    ? (dataObject = JSON.parse(window.localStorage.getItem("productAstorage")))
-    : (dataObject = dataObject);
+  Obj["quantity"] = 1;
+  cartQuantity.length == 0
+    ? window.localStorage.getItem("productAstorage") != null
+      ? (dataObject = JSON.parse(
+          window.localStorage.getItem("productAstorage")
+        ))
+      : (dataObject = cartQuantity)
+    : (dataObject = cartQuantity);
   let a = data.filter((f) => f.text == par)[0].content[
     Number(dia["dia"].split("@@Static@")[0])
   ];

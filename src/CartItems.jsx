@@ -11,7 +11,8 @@ function CartItems() {
         ))
     : location.state == null
     ? ""
-    : (cartQuantity = location.state);
+    :
+     (cartQuantity = location.state);
   {
     cartQuantity.length == 0 ? console.log("no data") : "";
   }

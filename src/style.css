@@ -1053,15 +1053,18 @@ li::marker {
   padding: 32px 24px;
   width: 80%;
   gap: 24px;
+  background: var(--white);
 }
 .outlet_box100 {
   padding: 32px 24px;
   gap: 24px;
+  background: var(--white);
 }
 .outlet_box70 {
   padding: 32px 24px;
   width: 70%;
   gap: 24px;
+  background: var(--white);
 }
 .thead {
   background: var(--text-color1);
@@ -1116,6 +1119,24 @@ li::marker {
 }
 .upload_card {
   border: 1px dashed var(--primary-color);
+}
+.log_out_pad_dash {
+  margin-block-end: 54px;
+}
+.log_out_pad_products {
+  margin-block-end: 125px;
+}
+.log_out_pad_product {
+  margin-block-end: 188px;
+}
+.log_out_pad_analytics {
+  margin-block-end: 150px;
+}
+.log_out_pad_description{
+  margin-block-end: 254px;
+}
+.log_out_pad_image{
+  margin-block-end: 208px;
 }
 /*admin add images*/
 @media screen and (max-width: 1200px) {
@@ -1691,10 +1712,10 @@ li::marker {
 }
 @media screen and (max-width: 345px) {
   /*nav*/
-  .none345{
+  .none345 {
     display: none;
   }
-  .nav{
+  .nav {
     flex-wrap: wrap;
   }
   /*nav*/

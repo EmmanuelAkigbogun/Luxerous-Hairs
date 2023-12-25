@@ -11,7 +11,7 @@ function AdminProductName() {
   let { shop } = useParams();
   return (
     <>
-      <section className="gap24 column outlet_box100">
+      <section className="gap24 column outlet_box100 log_out_mobile log_out_pad_product">
         {shop.includes("New Product") ? (
           ""
         ) : (
@@ -67,7 +67,8 @@ function AdminProductName() {
           <section className="space_between gap16 flex_wrap">
             <NavLink
               className="row gap10 button button0 border white_bg nowrap"
-              to={"/Admin/Images"}>
+              to={"/Admin/Images"}
+            >
               <img src={files.lesserArrow} alt="arrow" />
               Back
             </NavLink>
