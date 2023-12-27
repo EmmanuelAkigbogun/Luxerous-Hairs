@@ -1,8 +1,9 @@
-import { NavLink, useLocation, useParams } from "react-router-dom";
+import { NavLink, useLocation, useNavigate, useParams } from "react-router-dom";
 import data from "./assets/Bundles";
 export let cartQuantity = [];
 function CartItems() {
   let location = useLocation();
+  let navigate = useNavigate();
   window.localStorage.getItem("productAstorage") != null
     ? JSON.parse(window.localStorage.getItem("productAstorage")).length === 0
       ? window.localStorage.removeItem("productAstorage")
@@ -11,8 +12,7 @@ function CartItems() {
         ))
     : location.state == null
     ? ""
-    :
-     (cartQuantity = location.state);
+    : (cartQuantity = location.state);
   {
     cartQuantity.length == 0 ? console.log("no data") : "";
   }
@@ -24,7 +24,12 @@ function CartItems() {
           <>
             <h3 className="heading heading3">no item in cart</h3>
             <section className="width100">
-              <button className="row gap10 button black button0">
+              <button
+                className="row gap10 button black button0"
+                onClick={() => {
+                  navigate("/Shop%20Our%20Bundles");
+                }}
+              >
                 Start Shopping
               </button>
             </section>
