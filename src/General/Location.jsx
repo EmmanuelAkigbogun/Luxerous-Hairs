@@ -6,7 +6,7 @@ export let Location = () => {
   let maxNumber = 3;
   let su = -1;
   let { par } = useParams();
-  let {dia}  = useParams();
+  let { dia } = useParams();
   return (
     <>
       <section className="column gap8 parent_section location">
@@ -18,8 +18,11 @@ export let Location = () => {
             .pop()
             .split("@@Static@")
             .pop()
-            .replaceAll(dia.split("@@Static@")[1], "Product Details")}
-            {console.log(dia)}
+            .replaceAll(
+              dia !== undefined ? dia.split("@@Static@")[1] : "",
+              dia !== undefined ? "Product Details" : ""
+            )}
+          {console.log(dia)}
         </h1>
         <section className="row gap8 align_center product_scroll">
           {location.pathname
