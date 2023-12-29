@@ -99,12 +99,12 @@ function ProductA() {
         <section className="flex1 column gap68 j_center product_text">
           <section className="gap24 column">
             <section className="gap12 column">
-              <h1 className="heading heading1">
-                This is the title of the Hair
+              <h1 className="heading heading2">
+                {dia["dia"].split("@@Static@")[1]}
               </h1>
 
               <section className="">
-                <h2 className="heading heading">${product.price}</h2>
+                <h2 className="heading heading1">${product.price}</h2>
                 <section className="align_end column">
                   <section className="gap10 row">
                     <p className="paragraph paragraph1">Try Hair On with AR</p>
