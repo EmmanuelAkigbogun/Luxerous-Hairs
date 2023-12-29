@@ -183,7 +183,7 @@ function Nav({ bagBoolean }) {
                 />
               </NavLink>
               <NavLink
-                to={`/Shop%20Our%20Bundles/My%20Cart/_Page_CartItems`}
+                to={`/Shop%20Our%20Bundles/My%20Cart`}
                 className={`align_center  ${bagBoolean ? "" : "none"}`}
                 onClick={() => {
                   window.scrollTo(0, 0);

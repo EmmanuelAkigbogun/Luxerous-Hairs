@@ -9,7 +9,7 @@ function SectionB() {
           </h2>
         </section>
         <section>
-          <SectionBChild />
+          <SectionBChild gaps="gap80"/>
         </section>
       </section>
     </>

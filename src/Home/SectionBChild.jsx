@@ -1,13 +1,13 @@
 import { useState } from "react";
 import files from "../assets/files";
-export let SectionBChild = () => {
+export let SectionBChild = ({ gaps }) => {
   let handleClick = (e) => {
     setcheck((check = e.target.htmlFor));
   };
   let [check, setcheck] = useState("b1");
   return (
     <>
-      <section className="gap80 row flex1 b_container">
+      <section className={`${gaps} row flex1 b_container`}>
         <section className="flex1 align_end b_images_section">
           <section className="row gap24 b_image_gap">
             <section className="flex2 row align_center">

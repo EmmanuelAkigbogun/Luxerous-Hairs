@@ -44,7 +44,7 @@ function Footer() {
                 <NavLink
                   key={e}
                   className="paragraph pragraph2"
-                  to={`/Shop%20Our%20Bundles/${e}`}
+                  to={`/Shop%20Our%20Bundles/${e}/_Page1`}
                   onClick={() => {
                     window.scrollTo(0, 0);
                   }}

@@ -1,11 +1,11 @@
-import { useLocation, NavLink } from "react-router-dom";
+import { useLocation, NavLink, useParams } from "react-router-dom";
 import files from "../assets/files";
 export let Location = () => {
   let location = useLocation();
   let pathSum = "";
   let maxNumber = 3;
   let su = -1;
-
+  let { par } = useParams();
   return (
     <>
       <section className="column gap8 parent_section location">
@@ -60,6 +60,8 @@ export let Location = () => {
                                     ).length -
                                     1
                                 ? location.pathname
+                                : pathSum.endsWith(par)
+                                ? pathSum+"/_Page1"
                                 : pathSum
                             }
                             state={location.state}
