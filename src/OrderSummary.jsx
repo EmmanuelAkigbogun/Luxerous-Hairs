@@ -1,10 +1,11 @@
 import files from "./assets/files";
-import { NavLink, useLocation, useParams } from "react-router-dom";
+import { NavLink, useLocation, useNavigate, useParams } from "react-router-dom";
 import data from "./assets/Bundles";
 import { cartQuantity } from "./CartItems";
 function OrderSummary() {
   let cartData = [];
   let location = useLocation();
+  let navigate = useNavigate();
   let counter = 0;
   let priceData = 0;
   cartQuantity.length == 0
@@ -71,32 +72,38 @@ function OrderSummary() {
             </section>
           </section>
         </section>
-        {location.pathname.endsWith("_Page_CartItems") ||
+        {location.pathname.endsWith("My%20Cart") ||
         location.pathname.endsWith("_Page_Payment") ? (
-          <NavLink
-            to={
-              location.pathname.endsWith("_Page_CartItems")
-                ? location.pathname.replace("/_Page_CartItems", "")
-                : location.pathname
-            }
+          <button
+            onClick={() => {
+              location.pathname.endsWith("My%20Cart")
+                ? navigate(
+                    location.pathname +
+                      "/_Page_Payment Process/_Page_Shipping Details",
+                    {
+                      state: cartData,
+                    }
+                  )
+                : "";
+            }}
             className="row gap10 button button0 black width100"
-            state={cartData}
           >
-            {location.pathname.endsWith("_Page_CartItems") ? (
+            {location.pathname.endsWith("My%20Cart") ? (
               <img src={files.sheildTick} alt="" />
             ) : (
               `Pay $${totalPrice}`
             )}
-            {location.pathname.endsWith("_Page_CartItems") ? (
+            {location.pathname.endsWith("My%20Cart") ? (
               `Secure Checkout`
             ) : (
               <img src={files.greaterArrow} alt="" />
             )}
-          </NavLink>
+          </button>
         ) : (
           ""
         )}
       </section>
+
       {console.log(cartData)}
     </>
   );

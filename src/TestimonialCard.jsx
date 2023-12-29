@@ -3,7 +3,7 @@ function TestimonialCard({ image }) {
   return (
     <>
       <section
-        style={{ width: "250px", minWidth: "100%" }}
+        style={{ width: "250px", maxWidth: "100%" }}
       >
         <section className="j_center column gap16">
           <img src={image} alt="" className="border-rad8 width100" />

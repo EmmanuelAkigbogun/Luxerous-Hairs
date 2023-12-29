@@ -12,18 +12,16 @@ function SignIn() {
             e.preventDefault();
             let formData = new FormData(e.target);
             console.log(Object.fromEntries(formData.entries()));
-            formData.get("email-sign-in") == "emmanuelakigbogun@gmail.com" &&
+            formData.get("email") == "emmanuelakigbogun@gmail.com" &&
             formData.get("password-sign-in") == "love"
               ? navigate("/admin")
-              : formData.get("email-sign-in") ==
+              : formData.get("email") ==
                   "emmanuelakigbogun@gmail.com" &&
-                formData.get("password-sign-in")=="hate"
+                formData.get("password-sign-in") == "hate"
               ? navigate("/")
               : navigate("/Account/Sign Up");
             {
-              console.log(
-                formData.get("password-sign-in")["password-sign-in"] == "adamas"
-              );
+              console.log(Object.fromEntries(formData.entries()));
             }
           }}
         >
@@ -37,7 +35,7 @@ function SignIn() {
               <input
                 id="email"
                 type="email"
-                name="email-sign-in"
+                name="email"
                 placeholder="janejennygmail.com"
                 className="contact_input input_border"
                 autoComplete="true"
@@ -85,15 +83,13 @@ function SignIn() {
                   <img src={files.faceBook} alt="face book" className="icon" />
                 </button>
               </section>
-              <section className="row gap8 flex_wrap j_center">
+              <NavLink
+                className="row gap8 flex_wrap j_center"
+                to={`/Account/Sign Up`}
+              >
                 <p className="paragraph paragraph1">Don’t have an account?</p>
-                <NavLink
-                  className="paragraph paragraph1 paragraph_bold"
-                  to={`/Account/Sign Up`}
-                >
-                  Sign Up
-                </NavLink>
-              </section>
+                <p className="paragraph paragraph1 paragraph_bold">Sign Up</p>
+              </NavLink>
             </section>
           </section>
         </form>

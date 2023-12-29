@@ -28,7 +28,7 @@ function ForgotPassword() {
 
               <input
                 id="email"
-                name="email-forgot"
+                name="email"
                 type="email"
                 placeholder="janejennygmail.com"
                 className="contact_input input_border"
@@ -66,15 +66,13 @@ function ForgotPassword() {
                   <img src={files.faceBook} alt="face book" className="icon" />
                 </button>
               </section>
-              <section className="row gap8 flex_wrap j_center">
+              <NavLink
+                className="row gap8 flex_wrap j_center"
+                to={`/Account/Sign Up`}
+              >
                 <p className="paragraph paragraph1">Don’t have an account?</p>
-                <NavLink
-                  className="paragraph paragraph1 paragraph_bold"
-                  to={`/Account/Sign Up`}
-                >
-                  Sign Up
-                </NavLink>
-              </section>
+                <p className="paragraph paragraph1 paragraph_bold">Sign Up</p>
+              </NavLink>
             </section>
           </section>
         </form>

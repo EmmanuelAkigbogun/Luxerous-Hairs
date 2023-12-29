@@ -1,13 +1,13 @@
 import { NavLink, useLocation, useParams } from "react-router-dom";
-function PagenationReview({ maplist, maxGuy, constant }) {
+function Pagenation({ maplist, maxGuy, constant }) {
   let { par } = useParams();
   let ada = useParams();
   let dia = useParams();
-  let {shop} = useParams();
+  let { shop } = useParams();
   let location = useLocation();
   return (
     <>
-      <section className="j_end height100 pagenation whitish">
+      <section className="j_end pagination whitish product_scroll" >
         {maplist.length < constant * 5 + 1
           ? maplist
               .slice(
@@ -96,4 +96,4 @@ function PagenationReview({ maplist, maxGuy, constant }) {
     </>
   );
 }
-export default PagenationReview;
+export default Pagenation;

@@ -887,7 +887,8 @@ a {
 .bundle_name_grid {
   padding-block-end: 110px;
 }
-.pagenation {
+.pagination {
+  display: flex;
   padding-block-end: 90px;
   gap: 16px;
 }
@@ -1144,10 +1145,10 @@ li::marker {
 .log_out_pad_order {
   margin-block-end: 16px;
 }
-.log_out_pad_testimonial{
+.log_out_pad_testimonial {
   margin-block-end: 48px;
 }
-.log_out_pad{
+.log_out_pad {
   padding-block-end: 48px;
 }
 /*admin add images*/
@@ -1407,9 +1408,9 @@ li::marker {
   .mobile_column1200 {
     flex-direction: column;
   }
-  .log_out_pad_mobile{
-  margin-block-end: 32px;
-}
+  .log_out_pad_mobile {
+    margin-block-end: 32px;
+  }
 }
 @media screen and (max-width: 1111px) {
   .review_column {
@@ -1437,6 +1438,20 @@ li::marker {
   .chart_image {
     padding: 16px 8px;
   }
+  .outlet_box {
+    width: auto;
+    padding: 32px 16px;
+  }
+  .outlet_box100 {
+    padding: 0px;
+  }
+  .outlet_box70 {
+    padding: 0px;
+    width: auto;
+  }
+  .padding0 {
+    padding: 0px;
+  }
   .padding0 {
     padding: 0px;
   }
@@ -1446,7 +1461,7 @@ li::marker {
 }
 
 @media screen and (max-width: 900px) {
-  .mobile_gap16{
+  .mobile_gap16 {
     gap: 16px;
   }
   .mobile_column900 {
@@ -1571,20 +1586,7 @@ li::marker {
     width: auto;
   }
   /*Account*/
-  .outlet_box {
-    width: auto;
-    padding: 32px 16px;
-  }
-  .outlet_box100 {
-    padding: 0px;
-  }
-  .outlet_box70 {
-    padding: 0px;
-    width: auto;
-  }
-  .padding0 {
-    padding: 0px;
-  }
+
   .uploaded_image {
     width: 243px;
   }
@@ -1760,5 +1762,8 @@ li::marker {
   .update_tracking_parent {
     width: 100%;
     justify-content: space-between;
+  }
+  .pagination {
+    justify-content: flex-start;
   }
 }

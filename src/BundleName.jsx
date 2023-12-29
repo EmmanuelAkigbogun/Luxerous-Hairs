@@ -1,13 +1,20 @@
 import { Grid } from "./General/Grid";
 import data from "../src/assets/Bundles";
-import { review } from "../src/assets/Bundles";
 import { useLocation, useParams } from "react-router-dom";
-import Pagenation from "./Pagenation";
+import Pagination from "./Pagination";
 function BundleName() {
   let { par } = useParams();
   let dia = useParams();
   let ada = useParams();
   let local = useLocation();
+  let constant = 20;
+  let maplist = data.filter((f) => f.text == par)[0].content;
+  let maxGuy = maplist.slice(
+    0,
+    maplist.length % constant == 0
+      ? maplist.length / constant
+      : parseInt(maplist.length / constant) + 1
+  ).length;
   let n = 0;
   let qy = 0;
   !local.pathname.includes("_Page")
@@ -38,7 +45,11 @@ function BundleName() {
             );
           })}
         </section>
-        <Pagenation />
+        <Pagination
+          maplist={maplist}
+          maxGuy={maxGuy}
+          constant={constant}
+        />
       </div>
     </>
   );

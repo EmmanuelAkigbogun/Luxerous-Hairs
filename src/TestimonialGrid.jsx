@@ -24,6 +24,18 @@ function TestimonialGrid() {
           <section className="flex1 j_center width100">
             <TestimonialCard image={files.brunetteSmiling} />
           </section>
+          <section className="flex1 j_center width100">
+            <TestimonialCard image={files.brunetteSmiling} />
+          </section>
+          <section className="flex1 j_center width100">
+            <TestimonialCard image={files.brunetteSmiling} />
+          </section>
+          <section className="flex1 j_center width100">
+            <TestimonialCard image={files.brunetteSmiling} />
+          </section>
+          <section className="flex1 j_center width100">
+            <TestimonialCard image={files.brunetteSmiling} />
+          </section>
         </section>
       ) : (
         <>

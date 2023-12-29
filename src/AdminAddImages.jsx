@@ -14,17 +14,23 @@ function AdminAddImages() {
               resolution is 202 pixels width x 174 pixels height
             </p>
           </section>
-          <section className="gap24 row mobile_column1200">
-            <section className="flex1">
+          <section className="gap24 row mobile_column600 wrap">
+            <section className="">
               <UploadCard />
             </section>
-            <section className="flex1">
+            <section className="">
               <UploadedImages booleanas={true} image={files.seller2} />
             </section>
-            <section className="flex1">
+            <section className="">
               <UploadedImages booleanas={false} image={files.seller2} />
             </section>
-            <section className="flex1">
+            <section className="">
+              <UploadedImages booleanas={false} image={files.seller2} />
+            </section>
+            <section className="">
+              <UploadedImages booleanas={false} image={files.seller2} />
+            </section>
+            <section className="">
               <UploadedImages booleanas={false} image={files.seller2} />
             </section>
           </section>

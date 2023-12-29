@@ -3,7 +3,7 @@ function UploadCard() {
   return (
     <>
       <section className="card_padding16 gap4 column align_center j_center border-rad8 upload_card uploaded_image">
-        <section className="align_end">
+        <section className="">
           <img src={files.galleryAdd} alt="" />
         </section>
         <p className="paragraph paragraph2 paragraph_bold underline text_center">

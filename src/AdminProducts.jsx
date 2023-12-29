@@ -37,6 +37,9 @@ function AdminProducts() {
               <option value="Raw Straight Type 4">Raw Straight Type 4</option>
               <option value="Raw Straight Type 5">Raw Straight Type 5</option>
               <option value="Raw Straight Type 6">Raw Straight Type 6</option>
+              <option value="Raw Straight Type 7">Raw Straight Type 7</option>
+              <option value="Raw Straight Type 8">Raw Straight Type 8</option>
+              <option value="Raw Straight Type 9">Raw Straight Type 9</option>
             </select>
           </section>
         </section>

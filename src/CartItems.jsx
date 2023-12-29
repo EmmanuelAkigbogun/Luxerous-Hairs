@@ -16,7 +16,6 @@ function CartItems() {
   {
     cartQuantity.length == 0 ? console.log("no data") : "";
   }
-  let dia = useParams();
   return (
     <>
       <section className="gap24 column">
@@ -52,6 +51,7 @@ function CartItems() {
                     ].image
                   }
                   alt=""
+                  style={{background:`${e["image"]}`}}
                   className="cart_items_image"
                   key={String(Math.random()).slice(2, 8)}
                 />
@@ -84,6 +84,7 @@ function CartItems() {
                           </p>
                           <button
                             className="button button2 black_white height100"
+                            type="button"
                             key={String(Math.random()).slice(2, 8)}
                           >
                             {e["length"]}"
@@ -103,9 +104,8 @@ function CartItems() {
                                   "productAstorage",
                                   JSON.stringify(cartQuantity)
                                 );
+                                navigate("", { state: cartQuantity });
                               }}
-                              to=""
-                              state={cartQuantity}
                             >
                               +
                             </NavLink>
@@ -115,7 +115,7 @@ function CartItems() {
                             >
                               {e["quantity"]}
                             </p>
-                            <NavLink
+                            <button
                               className="button3 paragraph paragraph2"
                               onClick={() => {
                                 cartQuantity[i]["quantity"] - 1 <= 0
@@ -126,12 +126,12 @@ function CartItems() {
                                   "productAstorage",
                                   JSON.stringify(cartQuantity)
                                 );
+                                navigate("", { state: cartQuantity });
                               }}
-                              to=""
-                              state={cartQuantity}
+                              type="button"
                             >
                               -
-                            </NavLink>
+                            </button>
                           </section>
                         </section>
                       </section>
@@ -146,20 +146,20 @@ function CartItems() {
                         >
                           Edit Item
                         </NavLink>
-                        <NavLink
-                          className="paragraph paragraph1"
+                        <button
+                          className="paragraph paragraph1 white_bg no_border"
                           onClick={() => {
                             cartQuantity.splice(i, 1);
                             window.localStorage.setItem(
                               "productAstorage",
                               JSON.stringify(cartQuantity)
                             );
+                            navigate("", { state: cartQuantity });
                           }}
-                          to=""
-                          state={cartQuantity}
+                          type="button"
                         >
                           Remove Item
-                        </NavLink>
+                        </button>
                       </section>
                     </section>
                   </section>

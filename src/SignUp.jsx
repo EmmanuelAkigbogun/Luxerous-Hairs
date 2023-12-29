@@ -22,7 +22,7 @@ function SignUp() {
               <input
                 id="name"
                 type="text"
-                name="name-sign-up"
+                name="name"
                 placeholder="Jane"
                 className="contact_input input_border"
                 autoComplete="true"
@@ -36,7 +36,7 @@ function SignUp() {
               <input
                 id="email"
                 type="email"
-                name="email-sign-up"
+                name="email"
                 placeholder="janejennygmail.com"
                 className="contact_input input_border"
                 autoComplete="true"
@@ -85,15 +85,13 @@ function SignUp() {
                   <img src={files.faceBook} alt="face book" className="icon" />
                 </button>
               </section>
-              <section className="row gap8 flex_wrap j_center">
+              <NavLink
+                className="row gap8 flex_wrap j_center"
+                to={`/Account/Sign In`}
+              >
                 <p className="paragraph paragraph1">Already have an account?</p>
-                <NavLink
-                  className="paragraph paragraph1 paragraph_bold"
-                  to={`/Account/Sign In`}
-                >
-                  Sign In
-                </NavLink>
-              </section>
+                <p className="paragraph paragraph1 paragraph_bold">Sign In</p>
+              </NavLink>
             </section>
           </section>
         </form>

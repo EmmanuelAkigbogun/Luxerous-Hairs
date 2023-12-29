@@ -91,12 +91,8 @@ function Main() {
               ></Route>
             </Route>
             <Route
-              path=":shop/:par/Product Name_Page/:dia/_Page_All"
-              element={<AllReviews start={0} end={6} />}
-            />
-            <Route
               path=":shop/:par/Product Name_Page/:dia/_Page_All/:ada"
-              element={<AllReviews start="" end="" />}
+              element={<AllReviews classValue="white_bg" />}
             />
             <Route path="My Orders" element={<AdminOrders />}></Route>
             <Route
@@ -169,33 +165,33 @@ function Main() {
                 ></Route>
               </Route>
               <Route
-                path="/Shop Our Bundles/:par/Product Name_Page/:dia/_Page_All"
-                element={<AllReviews start={0} end={6} />}
-              />
-              <Route
                 path="/Shop Our Bundles/:par/Product Name_Page/:dia/_Page_All/:ada"
-                element={<AllReviews start="" end="" />}
+                element={<AllReviews classValue="" />}
               />
               <Route
                 path="/Shop Our Bundles/:par/Product Name_Page/:dia/My Cart"
                 element={<MyCart />}
               >
-                <Route path="" element={<PaymentProcess />}>
-                  <Route path="" element={<Shipping />} />
+                <Route
+                  path="_Page_Payment Process"
+                  element={<PaymentProcess />}
+                >
                   <Route path="_Page_Shipping Details" element={<Shipping />} />
                   <Route path="_Page_Delivery Method" element={<Delivery />} />
                   <Route path="_Page_Payment" element={<Payment />} />
                 </Route>
-                <Route path="_Page_CartItems" element={<CartItems />} />
+                <Route path="" element={<CartItems />} />
               </Route>
               <Route path="Shop Our Bundles/My Cart" element={<MyCart />}>
-                <Route path="" element={<PaymentProcess />}>
-                  <Route path="" element={<Shipping />} />
+                <Route
+                  path="_Page_Payment Process"
+                  element={<PaymentProcess />}
+                >
                   <Route path="_Page_Shipping Details" element={<Shipping />} />
                   <Route path="_Page_Delivery Method" element={<Delivery />} />
                   <Route path="_Page_Payment" element={<Payment />} />
                 </Route>
-                <Route path="_Page_CartItems" element={<CartItems />} />
+                <Route path="" element={<CartItems />} />
               </Route>
               <Route
                 path="/Shop Our Bundles/:par/:ada"

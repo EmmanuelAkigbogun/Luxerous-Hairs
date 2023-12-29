@@ -51,7 +51,7 @@ function Review({
             shop == "My Products" ? "Admin/My Products" : "Shop Our Bundles"
           }/${par}/Product Name_Page/${dia["dia"]}/${
             locator.pathname.includes("_Page_Review")
-              ? "_Page_All"
+              ? "_Page_All/_Page1"
               : "_Page_Review"
           }`}
         >
@@ -126,6 +126,7 @@ function Review({
               );
             })}
           </section>
+          {console.log(start,"jik")}
         </section>
         {a.reviews.slice(start, end).map((f) => {
           return (

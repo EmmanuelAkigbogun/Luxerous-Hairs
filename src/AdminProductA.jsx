@@ -30,7 +30,7 @@ function AdminProductA() {
       threeStars: a.reviews.filter((e) => e.star == "3").length,
       twoStars: a.reviews.filter((e) => e.star == "2").length,
       oneStars: a.reviews.filter((e) => e.star == "1").length,
-      total: a.reviews.length * 5,
+      total: a.reviews.length === 0 ? 1 : a.reviews.length * 5,
     };
 
     let starValue =
