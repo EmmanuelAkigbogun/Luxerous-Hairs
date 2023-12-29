@@ -6,6 +6,7 @@ export let Location = () => {
   let maxNumber = 3;
   let su = -1;
   let { par } = useParams();
+  let {dia}  = useParams();
   return (
     <>
       <section className="column gap8 parent_section location">
@@ -16,7 +17,9 @@ export let Location = () => {
             .filter((filter) => !filter.includes("_Page"))
             .pop()
             .split("@@Static@")
-            .pop()}
+            .pop()
+            .replaceAll(dia.split("@@Static@")[1], "Product Details")}
+            {console.log(dia)}
         </h1>
         <section className="row gap8 align_center product_scroll">
           {location.pathname
@@ -61,7 +64,7 @@ export let Location = () => {
                                     1
                                 ? location.pathname
                                 : pathSum.endsWith(par)
-                                ? pathSum+"/_Page1"
+                                ? pathSum + "/_Page1"
                                 : pathSum
                             }
                             state={location.state}
