@@ -1,13 +1,13 @@
 import { NavLink, useLocation, useParams } from "react-router-dom";
-export let Grid = ({ data, bundlename, n, m }) => {
+export let Grid = ({ data,classValue, bundlename, n, m }) => {
   let location = useLocation();
-  //{i + 1}"img"{n}"gd"{m}"pg {4 * n + i + 20 * m}g*four+img"
+  //{i + 1}"img"{n}"grid start element"{m}"page {4 * n + i + 20 * m}g*four+img"
   return (
     <section className="row gap30 grid">
       {data.map((a, i) => {
         return (
           <section
-            className="cards relative"
+            className={`cards ${classValue} relative`}
             key={a.image + String(Math.random()).slice(2, 8)}
           >
             {a.boolean != "" && (
@@ -26,7 +26,7 @@ export let Grid = ({ data, bundlename, n, m }) => {
             )}
             <NavLink
               to={`/${
-                location.pathname.replaceAll("%20"," ").endsWith("My Products")
+                location.pathname.replaceAll("%20", " ").endsWith("My Products")
                   ? "Admin/My Products"
                   : "Shop Our Bundles"
               }/${bundlename}/Product Name_Page/${4 * n + i + 20 * m}@@Static@${

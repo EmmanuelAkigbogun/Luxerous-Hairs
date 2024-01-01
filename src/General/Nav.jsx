@@ -9,15 +9,18 @@ let list = [
   "Raw Straight Type 4",
   "Raw Straight Type 5",
   "Raw Straight Type 6",
+  "Raw Straight Type 7",
+  "Raw Straight Type 8",
+  "Raw Straight Type 9",
 ];
 //     click=""
 function Nav({ bagBoolean }) {
   let ref = useRef(null);
-  let location = useLocation();
   let [se, sse] = useState("mobile_hide");
   let [h, sh] = useState("");
   let [c, sc] = useState("");
   let [cl, scl] = useState("");
+
   window.onclick = (e) => {
     c == "" ? "" : !ref.current.contains(e.target) && sc((c = ""));
   };
@@ -114,7 +117,7 @@ function Nav({ bagBoolean }) {
             />
             <NavLink
               to="/"
-              className="heading heading3 none345"
+              className={`heading heading3 ${c == "" ? "none345" : ""}`}
               onClick={() => {
                 window.scrollTo(0, 0);
                 c == "" ? "" : sc((c = ""));
@@ -208,6 +211,7 @@ function Nav({ bagBoolean }) {
           </section>
         </section>
       </header>
+      {console.log("paras nav")}
     </>
   );
 }

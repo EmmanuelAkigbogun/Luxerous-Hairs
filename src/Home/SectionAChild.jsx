@@ -9,6 +9,7 @@ export let SectionAChild = ({ data, heading }) => {
         <Grid
           data={data.filter((f) => f.text == heading)[0].content.slice(0, 4)}
           bundlename={heading}
+          classValue=""
           n={0}
           m={0}
         />

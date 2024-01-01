@@ -70,15 +70,21 @@ export let SectionBChild = ({ gaps }) => {
             vulputate libero et velit interdum {check}”.
           </h2>
           <section className="">
-            <section className="gap16 column align_end">
+            <section className="gap16 column ">
               <section className="column gap8">
                 <p className="paragraph paragraph0 paragraph_bold">
                   User Name {check}
                 </p>
                 <p className="paragraph paragraph1">User Title {check}</p>
               </section>
-              <section>
-                <section className="row gap24">
+              <section
+                className="row gap24 product_scroll"
+              
+              >
+                        <section
+                  className="row gap24"
+          
+                >
                   <label htmlFor="b1" className="label" onClick={handleClick}>
                     <p className={check == "b1" ? "label_child" : ""}></p>
                   </label>
