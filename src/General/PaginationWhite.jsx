@@ -28,6 +28,7 @@ function PaginationWhite({ list, directory }) {
                   : "whitish opacity"
               }`}
               key={e}
+              state={location.state}
               onClick={() => {
                 navigate(
                   e ==
@@ -53,10 +54,11 @@ function PaginationWhite({ list, directory }) {
                         shop == "My Products"
                           ? `Admin/My Products`
                           : `Shop Our Bundles`
-                      }/${par}/Product Name_Page/${dia}${directory}/_Page_${e}`
-                ),
-                  { state: location.state };
+                      }/${par}/Product Name_Page/${dia}${directory}/_Page_${e}`,
+                  { state: location.state }
+                );
               }}
+              type="button"
             >
               {e}
             </button>
