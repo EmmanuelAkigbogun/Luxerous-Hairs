@@ -1,5 +1,5 @@
 import files from "./assets/files";
-import { NavLink, useLocation, useNavigate, useParams } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import data from "./assets/Bundles";
 import { cartQuantity } from "./CartItems";
 function OrderSummary() {
@@ -43,21 +43,21 @@ function OrderSummary() {
           </section>
           <section className="gap24 column">
             <section className="gap12 column">
-              <section className="row gap52">
+              <section className="row gap52 wrap345 mob_gap16">
                 <p className="paragraph0 paragraph">Sub Total:</p>
                 <p className="paragraph0 paragraph">${priceData}</p>
               </section>
-              <section className="row gap61">
+              <section className="row gap61 wrap345 mob_gap16">
                 <p className="paragraph0 paragraph">Delivery:</p>
-                <p className="paragraph0 paragraph">To be added at checkout</p>
+                <p className="paragraph0 paragraph">At checkout</p>
               </section>
-              <section className="row gap100">
+              <section className="row gap100 wrap345 mob_gap16">
                 <p className="paragraph0 paragraph">Tax:</p>
                 <p className="paragraph0 paragraph">${tax}</p>
               </section>
             </section>
             <section className="gap12 column">
-              <section className="gap85 row">
+              <section className="gap85 row wrap345 mob_gap16">
                 <p className="paragraph0 paragraph paragraph_bold">Total:</p>
                 <p className="paragraph0 paragraph paragraph_bold">
                   ${totalPrice}
@@ -86,7 +86,7 @@ function OrderSummary() {
                   )
                 : "";
             }}
-            className="row gap10 button button0 black width100"
+            className="row gap10 button button0 black width100 vw100"
           >
             {location.pathname.endsWith("My%20Cart") ? (
               <img src={files.sheildTick} alt="" />

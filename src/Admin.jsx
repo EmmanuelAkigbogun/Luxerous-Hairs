@@ -29,11 +29,11 @@ function Admin() {
             ""
           ) : (
             <section className="row gap24 align_center">
-              <NavLink className="row gap10 button button0 border white_bg width100 nowrap none">
+              <NavLink className="row gap10 vw100 button button0 border white_bg width100 nowrap none">
                 Manage Drawing
               </NavLink>
               <NavLink
-                className="row gap10 button button0 black width100 nowrap wrap_end"
+                className="row gap10 button vw100 button0 black width100 nowrap wrap_end"
                 to={"/Admin/Description"}
               >
                 Add New Product

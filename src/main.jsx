@@ -48,6 +48,7 @@ import AdminAddImages from "./AdminAddImages";
 import AddTestimonials from "./AddTestimonials";
 import PreviewTestimonials from "./PreviewTestimonials";
 
+
 function Main() {
   let router = createBrowserRouter(
     createRoutesFromElements(
@@ -124,6 +125,7 @@ function Main() {
               ></Route>
             </Route>
           </Route>
+        
           <Route path="/" element={<Pages />}>
             <Route path="/Account" element={<CreateAccount />}>
               <Route path="" element={<SignUp />}></Route>

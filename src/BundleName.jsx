@@ -39,6 +39,7 @@ function BundleName() {
                   .content.slice(n + k * i, n + k * (i + 1))}
                 key={String(Math.random()).slice(2, 8)}
                 bundlename={par}
+                classValue=""
                 n={i}
                 m={qy}
               />
@@ -50,6 +51,7 @@ function BundleName() {
           maxGuy={maxGuy}
           constant={constant}
         />
+        {console.log(qy,n,90)}
       </div>
     </>
   );

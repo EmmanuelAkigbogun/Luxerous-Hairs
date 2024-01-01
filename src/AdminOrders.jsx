@@ -3,17 +3,15 @@ import OrderDetailsMain from "./OrderDetailsMain";
 function AdminOrders() {
   return (
     <>
-      <section
-        className="outlet_box column log_out_pad_order"
-      >
-        <section className="gap12 row mobile_column900">
+      <section className="outlet_box column log_out_pad_order">
+        <section className="gap12 row mobile_column600">
           <section className="j_end flex1 align_center">
             <p className="paragraph paragraph2 paragraph_bold">View For:</p>
           </section>
           <section className="gap12 row flex1 mobile_column600">
             <section
               className="select_input input_border"
-              style={{ width: "40%" }}
+              style={{ width: "60%" }}
             >
               <select
                 name=""

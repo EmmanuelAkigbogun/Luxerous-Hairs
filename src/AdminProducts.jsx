@@ -51,6 +51,7 @@ function AdminProducts() {
               .filter((f) => f.text == "Shop Best Sellers")[0]
               .content.slice(0, 4)}
             bundlename="Shop Best Sellers"
+            classValue="cards_admin"
             n={0}
             m={0}
           />
@@ -65,6 +66,7 @@ function AdminProducts() {
                   .content.slice(n + k * i, n + k * (i + 1))}
                 key={String(Math.random()).slice(2, 8)}
                 bundlename={s}
+                classValue="cards_admin"
                 n={n}
                 m={m}
               />

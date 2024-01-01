@@ -28,6 +28,7 @@ function CartItems() {
                 onClick={() => {
                   navigate("/Shop%20Our%20Bundles");
                 }}
+                type="button"
               >
                 Start Shopping
               </button>
@@ -51,7 +52,7 @@ function CartItems() {
                     ].image
                   }
                   alt=""
-                  style={{background:`${e["image"]}`}}
+                  style={{ background: `${e["image"]}` }}
                   className="cart_items_image"
                   key={String(Math.random()).slice(2, 8)}
                 />

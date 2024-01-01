@@ -1,4 +1,4 @@
-import { NavLink, useLocation, useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import files from "./assets/files";
 import data from "./assets/Bundles";
 import { cartQuantity } from "./CartItems";
@@ -17,13 +17,12 @@ let productList = [
 ];
 let length = ["5″", "6″", "7″", "8″", "9″", "10″", "11″", "12″"];
 let starNumber = [0.5, 1.5, 2.5, 3.5, 4.5];
-function ProductA() {
   let dataObject = [];
+function ProductA() {
   let boolean = true;
   let Obj = {};
   let dia = useParams();
   let { par } = useParams();
-  let location = useLocation();
   let [state, setState] = useState(length[0]);
   let [image, setImage] = useState(productList[0]);
   Obj["length"] = parseInt(state);
@@ -65,7 +64,13 @@ function ProductA() {
     ).slice(0, 3) + " ";
   return (
     <>
-      <section className="parent_section product_a gap68 row">
+      <section
+        className={`parent_section product_a ${
+          dia["shop"] == "My Product" || dia["shop"] == "New Product"
+            ? "gap24"
+            : "gap68"
+        } row`}
+      >
         <section className="flex1 gap24 row align_center product_images">
           <section className="product_scroll product_image_scroll">
             <section className="gap16 column j_center product_small_images">
@@ -112,26 +117,30 @@ function ProductA() {
                   </section>
                 </section>
               </section>
-              <section className="space_between">
-                <section className="row gap4 review">
-                  {starNumber.map((e) => {
-                    return (
-                      <img
-                        src={
-                          Number(starValue) > e
-                            ? files.blackStar
-                            : files.whiteStar
-                        }
-                        key={e}
-                        alt={e + 1}
-                      />
-                    );
-                  })}
-                  <p className="paragraph paragraph2">
-                    {starValue}({product.review.length} Reviews)
-                  </p>
+              {dia["shop"] == "New Product" ? (
+                ""
+              ) : (
+                <section className="space_between">
+                  <section className="row gap4 review">
+                    {starNumber.map((e) => {
+                      return (
+                        <img
+                          src={
+                            Number(starValue) > e
+                              ? files.blackStar
+                              : files.whiteStar
+                          }
+                          key={e}
+                          alt={e + 1}
+                        />
+                      );
+                    })}
+                    <p className="paragraph paragraph2">
+                      {starValue}({product.review.length} Reviews)
+                    </p>
+                  </section>
                 </section>
-              </section>
+              )}
             </section>
             <section className="gap8 column">
               <p className="paragraph paragraph2">Length</p>
@@ -156,46 +165,47 @@ function ProductA() {
               </section>
             </section>
           </section>
-          <section className="row gap24 width100 product_buttons">
-            <NavLink
-              className="row gap10 button button0 border white_bg width100"
-              onClick={() => {
-                dataObject.map((e, i) => {
-                  if (
-                    e["length"] == parseInt(state) &&
-                    e["image"] == parseInt(image) &&
-                    e["id"] == par + "$starJet" + dia["dia"]
-                  ) {
-                    ///dataObject[i]["quantity"] = dataObject[i]["quantity"] + 1;
-                    boolean = false;
-                  } else "";
-                });
-                boolean
-                  ? (dataObject = dataObject.concat(Obj))
-                  : (boolean = true);
-                console.log(dataObject);
-                window.localStorage.setItem(
-                  "productAstorage",
-                  JSON.stringify(dataObject)
-                );
-              }}
-              to={location.pathname}
-            >
-              <img src={files.bag} alt="a" />
-              Add to Bag
-            </NavLink>
-            <NavLink
-              to={`/Shop Our Bundles/${par}/Product Name_Page/${dia["dia"]}/My Cart`}
-              className="row gap10 button button0 black width100"
-              onClick={() => {
-                console.log(location, 990);
-              }}
-              state={dataObject}
-            >
-              Buy Now <img src={files.greaterArrow} alt="" />
-            </NavLink>
-          </section>
+          {dia["shop"] == "My Products" || dia["shop"] == "New Product" ? (
+            ""
+          ) : (
+            <section className="row gap24 width100 product_buttons">
+              <button
+                className="row gap10 button button0 border white_bg width100"
+                onClick={() => {
+                  dataObject.map((e, i) => {
+                    if (
+                      e["length"] == parseInt(state) &&
+                      e["image"] == image &&
+                      e["id"] == par + "$starJet" + dia["dia"]
+                    ) {
+                      ///dataObject[i]["quantity"] = dataObject[i]["quantity"] + 1;
+                      boolean = false;
+                    } else "";
+                  });
+                  boolean
+                    ? (dataObject = dataObject.concat(Obj))
+                    : (boolean = true);
+                  console.log(dataObject);
+                  window.localStorage.setItem(
+                    "productAstorage",
+                    JSON.stringify(dataObject)
+                  );
+                }}
+              >
+                <img src={files.bag} alt="a" />
+                Add to Bag
+              </button>
+              <NavLink
+                to={`/Shop Our Bundles/${par}/Product Name_Page/${dia["dia"]}/My Cart`}
+                className="row gap10 button button0 black width100"
+                state={dataObject}
+              >
+                Buy Now <img src={files.greaterArrow} alt="" />
+              </NavLink>
+            </section>
+          )}
           {console.log(JSON.parse(JSON.stringify(dataObject)))}
+          {console.log(dia["shop"] === undefined, 33)}
         </section>
       </section>
     </>

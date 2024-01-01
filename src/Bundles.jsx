@@ -1,14 +1,14 @@
 import { NavLink } from "react-router-dom";
 import SectionD from "./Home/SectionD.jsx";
 import data from "./assets/Bundles.js";
-
+let limitValue = 9;
 function Bundles() {
   return (
     <>
       <section className="parent_section">
         <section className="row gap30 bundles_grid">
           {data.map((a, i) => {
-            return i < 9 ? (
+            return i < limitValue ? (
               <section className="bundles_cards relative" key={a.image + i}>
                 <NavLink
                   className="card_image"

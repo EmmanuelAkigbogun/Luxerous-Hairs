@@ -1,7 +1,7 @@
 import { NavLink, Outlet, useLocation, useParams } from "react-router-dom";
 import files from "./assets/files";
 import PaginationWhite from "./General/PaginationWhite";
-import AdminProductA from "./AdminProductA";
+import ProductA from "./ProductA";
 import { Location } from "./General/Location";
 import AdminNewProduct from "./AdminNewProduct";
 let list = ["Description", "Spec", "Review"];
@@ -45,7 +45,7 @@ function AdminProductName() {
           {shop.includes("New Product") ? (
             <AdminNewProduct />
           ) : (
-            <AdminProductA />
+            <ProductA />
           )}
         </section>
         <section>

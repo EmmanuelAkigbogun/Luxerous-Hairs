@@ -4,14 +4,14 @@ function AdminDashBoard() {
   return (
     <>
       <section className="outlet_box padding0 column log_out_mobile log_out_pad_dash white_bg">
-        <section className="gap12 row mobile_column900">
+        <section className="gap12 row mobile_column600">
           <section className="j_end flex1 align_center">
             <p className="paragraph paragraph2 paragraph_bold">View For:</p>
           </section>
           <section className="gap12 row flex1 mobile_column600">
             <section
               className="select_input input_border"
-              style={{ width: "40%" }}
+              style={{ width: "60%" }}
             >
               <select
                 name=""

@@ -694,9 +694,8 @@ a {
 }
 
 .cards {
-  flex: 1;
   border-radius: 8px;
-  min-width: 170px;
+  width: calc((100vw - 14vw - 90px) / 4);
 }
 .card_child_c {
   padding-block-start: 15px;
@@ -880,8 +879,7 @@ a {
   padding-block-end: 57px;
 }
 .bundles_cards {
-  flex: 1;
-  min-width: 330px;
+  width: calc((100vw - 14vw - 60px) / 3);
   background: var(--white);
 }
 .bundle_name_grid {
@@ -1178,6 +1176,15 @@ li::marker {
   .parent_section {
     padding-inline: 5%;
   }
+  .bundles_cards {
+    width: calc((100vw - 10vw - 60px) / 3);
+  }
+  .cards {
+    width: calc((100vw - 10vw - 48px) / 4);
+  }
+  .cards_admin {
+    width: calc((100vw - 10vw - 48px - 48px) / 4);
+  }
   .desk_drop_container {
     top: auto;
     position: relative;
@@ -1289,10 +1296,6 @@ li::marker {
   .grid {
     flex-wrap: wrap;
     gap: 16px;
-  }
-
-  .cards {
-    min-width: 350px;
   }
 
   /*section a*/
@@ -1413,6 +1416,15 @@ li::marker {
   }
 }
 @media screen and (max-width: 1111px) {
+  /*bundle*/
+  .bundles_cards {
+    width: calc((100vw - 10vw - 30px) / 2);
+  }
+
+  /*bundles*/
+  .cards_admin {
+    width: calc((100vw - 10vw - 48px) / 4);
+  }
   .review_column {
     flex-direction: column;
     align-items: flex-start;
@@ -1474,9 +1486,11 @@ li::marker {
 
   /*hero*/
   /*sectiona*/
+  /*grid*/
   .cards {
-    min-width: 261px;
+    width: calc((100vw - 10vw - 16px) / 2);
   }
+  /*grid*/
 
   /*section a*/
   .c_child {
@@ -1603,10 +1617,14 @@ li::marker {
     width: 100%;
   }
 
+  /*grid*/
   .cards {
-    padding: 0px;
-    min-width: 178.7px;
+    padding: 0;
   }
+  .cards_admin {
+    width: calc((100vw - 32px - 16px) / 2);
+  }
+  /*grid*/
   .card_child {
     display: flex;
     justify-content: center;
@@ -1643,10 +1661,14 @@ li::marker {
   }
 
   /*contact*/
+  /*bundle*/
   .bundles_text {
     flex-direction: row;
   }
-
+  .bundles_cards {
+    width: calc((100vw - 32px));
+  }
+  /*bundle*/
   .cart_items_image {
     height: 155px;
     aspect-ratio: 1/2;
@@ -1680,10 +1702,6 @@ li::marker {
   }
   .hero_button {
     width: 90%;
-  }
-
-  .cards {
-    min-width: 145px;
   }
 
   .card_image {
@@ -1731,6 +1749,9 @@ li::marker {
   /*admin*/
 }
 @media screen and (max-width: 345px) {
+  .vw100 {
+    max-width: calc(100vw - 32px);
+  }
   /*nav*/
   .none345 {
     display: none;
@@ -1739,6 +1760,11 @@ li::marker {
     flex-wrap: wrap;
   }
   /*nav*/
+  /*grid*/
+  .cards {
+    width: 100%;
+  }
+  /*grid*/
   /*productA*/
   .cart_items_image {
     aspect-ratio: 1/1;
@@ -1759,11 +1785,20 @@ li::marker {
   .wrap345 {
     flex-wrap: wrap;
   }
+  .mob_gap16{
+    gap: 16px;
+  justify-content: space-between;
+  }
   .update_tracking_parent {
     width: 100%;
     justify-content: space-between;
   }
   .pagination {
     justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 225px) {
+  .wrap225{
+    flex-wrap: wrap-reverse;
   }
 }
