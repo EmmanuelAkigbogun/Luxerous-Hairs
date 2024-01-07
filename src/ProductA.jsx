@@ -3,7 +3,7 @@ import files from "./assets/files";
 import data from "./assets/Bundles";
 import { cartQuantity } from "./CartItems";
 import { useRef, useState } from "react";
-import Overlay from "./overlay";
+import Overlay from "./Overlay";
 import UploadAr from "./UploadAr";
 import Ar from "./Ar";
 import ProductLength from "./ProductLength";

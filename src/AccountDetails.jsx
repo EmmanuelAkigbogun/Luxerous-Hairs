@@ -1,9 +1,9 @@
 import { useState } from "react";
 import files from "./assets/files";
-import Overlay from "./overlay";
 import ShippingAddress from "./ShippingAddress";
 import PaymentDetails from "./PaymentDetails";
 import EditTestimonials from "./EditTestimonials";
+import Overlay from "./Overlay"
 function AccountDetails() {
   let [edit, setEdit] = useState("");
   let booleana = true;
