@@ -2,34 +2,22 @@ import { NavLink, useParams } from "react-router-dom";
 import files from "./assets/files";
 import data from "./assets/Bundles";
 import { cartQuantity } from "./CartItems";
-import { useState } from "react";
-let productList = [
-  "",
-  "violet",
-  "white",
-  "pink",
-  "orange",
-  "#00fff",
-  "purple",
-  "gold",
-  "green",
-  "red",
-];
-let length = ["5″", "6″", "7″", "8″", "9″", "10″", "11″", "12″"];
+import { useRef, useState } from "react";
+import Overlay from "./overlay";
+import UploadAr from "./UploadAr";
+import Ar from "./Ar";
+import ProductLength from "./ProductLength";
+import ProductImages from "./ProductImages";
 let starNumber = [0.5, 1.5, 2.5, 3.5, 4.5];
-  let dataObject = [];
+let dataObject = [];
 function ProductA() {
   let boolean = true;
-  let Obj = {};
   let dia = useParams();
   let { par } = useParams();
-  let [state, setState] = useState(length[0]);
-  let [image, setImage] = useState(productList[0]);
-  Obj["length"] = parseInt(state);
-  Obj["image"] = image;
-  Obj["id"] = par + "$starJet" + dia["dia"];
-  Obj["quantity"] = 1;
-  cartQuantity.length == 0
+  let [ar, setAr] = useState("");
+  let aImages = useRef(null);
+  let aLength = useRef(null);
+  cartQuantity.length === 0
     ? window.localStorage.getItem("productAstorage") != null
       ? (dataObject = JSON.parse(
           window.localStorage.getItem("productAstorage")
@@ -71,36 +59,7 @@ function ProductA() {
             : "gap68"
         } row`}
       >
-        <section className="flex1 gap24 row align_center product_images">
-          <section className="product_scroll product_image_scroll">
-            <section className="gap16 column j_center product_small_images">
-              {productList.map((e) => {
-                return (
-                  <img
-                    src={product.image}
-                    alt=""
-                    className={`product_img_small ${
-                      e == image ? "border" : ""
-                    }`}
-                    style={{ background: `${e}` }}
-                    key={e}
-                    onClick={() => {
-                      setImage((image = e));
-                    }}
-                  />
-                );
-              })}
-            </section>
-          </section>
-          <section className=" align_center width100">
-            <img
-              src={product.image}
-              alt=""
-              className="width100 product_img_large"
-              style={{ background: `${image}` }}
-            />
-          </section>
-        </section>
+        <ProductImages ref={aImages} product={product} />
         <section className="flex1 column gap68 j_center product_text">
           <section className="gap24 column">
             <section className="gap12 column">
@@ -111,7 +70,12 @@ function ProductA() {
               <section className="">
                 <h2 className="heading heading1">${product.price}</h2>
                 <section className="align_end column">
-                  <section className="gap10 row">
+                  <section
+                    className="gap10 row"
+                    onClick={() => {
+                      setAr((ar = "Upload"));
+                    }}
+                  >
                     <p className="paragraph paragraph1">Try Hair On with AR</p>
                     <img src={files.camera} alt="" />
                   </section>
@@ -142,28 +106,7 @@ function ProductA() {
                 </section>
               )}
             </section>
-            <section className="gap8 column">
-              <p className="paragraph paragraph2">Length</p>
-              <section className="product_scroll">
-                <section className="gap12 row nowrap">
-                  {length.map((e) => {
-                    return (
-                      <button
-                        className={`button button2 border ${
-                          state == e ? "black_white" : "white_bg"
-                        }`}
-                        key={e}
-                        onClick={() => {
-                          setState((state = e));
-                        }}
-                      >
-                        {e}
-                      </button>
-                    );
-                  })}
-                </section>
-              </section>
-            </section>
+            <ProductLength ref={aLength} />
           </section>
           {dia["shop"] == "My Products" || dia["shop"] == "New Product" ? (
             ""
@@ -172,16 +115,25 @@ function ProductA() {
               <button
                 className="row gap10 button button0 border white_bg width100"
                 onClick={() => {
-                  dataObject.map((e, i) => {
-                    if (
-                      e["length"] == parseInt(state) &&
-                      e["image"] == image &&
-                      e["id"] == par + "$starJet" + dia["dia"]
-                    ) {
-                      ///dataObject[i]["quantity"] = dataObject[i]["quantity"] + 1;
-                      boolean = false;
-                    } else "";
-                  });
+                  let Obj = {};
+                  {
+                    dataObject.map((e, i) => {
+                      if (
+                        e["length"] == parseInt(aLength?.current?.getState()) &&
+                        e["image"] == aImages?.current?.getState() &&
+                        e["id"] == par + "$starJet" + dia["dia"]
+                      ) {
+                        ///dataObject[i]["quantity"] = dataObject[i]["quantity"] + 1;
+                        boolean = false;
+                      }
+                    });
+                    if (boolean) {
+                      Obj["length"] = parseInt(aLength?.current?.getState());
+                      Obj["image"] = aImages?.current?.getState();
+                      Obj["id"] = par + "$starJet" + dia["dia"];
+                      Obj["quantity"] = 1;
+                    }
+                  }
                   boolean
                     ? (dataObject = dataObject.concat(Obj))
                     : (boolean = true);
@@ -205,8 +157,16 @@ function ProductA() {
             </section>
           )}
           {console.log(JSON.parse(JSON.stringify(dataObject)))}
-          {console.log(dia["shop"] === undefined, 33)}
         </section>
+      </section>
+      <section>
+        {ar == "Upload" ? (
+          <Overlay component={<UploadAr />} />
+        ) : ar == "Ar" ? (
+          <Overlay component={<Ar />} />
+        ) : (
+          ""
+        )}
       </section>
     </>
   );

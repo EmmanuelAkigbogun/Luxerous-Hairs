@@ -1,5 +1,11 @@
+import { useState } from "react";
 import files from "./assets/files";
+import Overlay from "./overlay";
+import ShippingAddress from "./ShippingAddress";
+import PaymentDetails from "./PaymentDetails";
+import EditTestimonials from "./EditTestimonials";
 function AccountDetails() {
+  let [edit, setEdit] = useState("");
   let booleana = true;
   return (
     <>
@@ -20,7 +26,14 @@ function AccountDetails() {
               <p className="paragraph paragraph0 paragraph_bold">
                 Payment Details
               </p>
-              <img src={files.edit} alt="edit" className="icon" />
+              <img
+                src={files.edit}
+                alt="edit"
+                className="icon"
+                onClick={() => {
+                  setEdit((edit = "payment"));
+                }}
+              />
             </section>
             <section className="gap4 column">
               <p className="paragraph paragraph2 paragraph_bold">Card</p>
@@ -36,7 +49,14 @@ function AccountDetails() {
               <p className="paragraph paragraph0 paragraph_bold">
                 Shipping Address
               </p>
-              <img src={files.edit} alt="edit" className="icon" />
+              <img
+                src={files.edit}
+                alt="edit"
+                className="icon"
+                onClick={() => {
+                  setEdit((edit = "shipping"));
+                }}
+              />
             </section>
             <section className="gap4 column">
               <p className="paragraph paragraph2 paragraph_bold">
@@ -57,7 +77,14 @@ function AccountDetails() {
               <p className="paragraph paragraph0 paragraph_bold">
                 Testimonials
               </p>
-              <img src={files.edit} alt="edit" className="icon" />
+              <img
+                src={files.edit}
+                alt="edit"
+                className="icon"
+                onClick={() => {
+                  setEdit((edit = "testimonials"));
+                }}
+              />
             </section>
             <section className="gap4 column">
               <p className="paragraph paragraph2 paragraph_bold">
@@ -86,7 +113,14 @@ function AccountDetails() {
               <p className="paragraph paragraph0 paragraph_bold">
                 Payment Details
               </p>
-              <img src={files.edit} alt="edit" className="icon" />
+              <img
+                src={files.edit}
+                alt="edit"
+                className="icon"
+                onClick={() => {
+                  setEdit((edit = "payment"));
+                }}
+              />
             </section>
             <section className="gap4 column">
               <p className="paragraph paragraph2 paragraph_bold">
@@ -100,7 +134,14 @@ function AccountDetails() {
               <p className="paragraph paragraph0 paragraph_bold">
                 Shipping Address
               </p>
-              <img src={files.edit} alt="edit" className="icon" />
+              <img
+                src={files.edit}
+                alt="edit"
+                className="icon"
+                onClick={() => {
+                  setEdit((edit = "shipping"));
+                }}
+              />
             </section>
             <section className="gap4 column">
               <p className="paragraph paragraph2 paragraph_bold">
@@ -114,7 +155,14 @@ function AccountDetails() {
               <p className="paragraph paragraph0 paragraph_bold">
                 Testimonials
               </p>
-              <img src={files.edit} alt="edit" className="icon" />
+              <img
+                src={files.edit}
+                alt="edit"
+                className="icon"
+                onClick={() => {
+                  setEdit((edit = "testimonials"));
+                }}
+              />
             </section>
             <section className="gap4 column">
               <p className="paragraph paragraph2 paragraph_bold">
@@ -126,6 +174,15 @@ function AccountDetails() {
             </section>
           </section>
         </section>
+      )}
+      {edit == "shipping" ? (
+        <Overlay component={<ShippingAddress />} />
+      ) : edit == "payment" ? (
+        <Overlay component={<PaymentDetails />} />
+      ) : edit == "testimonials" ? (
+        <Overlay component={<EditTestimonials />} />
+      ) : (
+        ""
       )}
     </>
   );

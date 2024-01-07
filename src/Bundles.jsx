@@ -50,7 +50,9 @@ function Bundles() {
       <section className="bundles_d">
         <SectionD />
       </section>
-      {console.log(data, 351)}
+      {
+      //console.log(data, 351)
+      }
     </>
   );
 }

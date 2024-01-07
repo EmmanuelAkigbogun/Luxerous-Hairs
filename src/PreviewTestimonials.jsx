@@ -20,7 +20,7 @@ function PreviewTestimonials() {
             className="row gap10 button button0 black nowrap"
             to={"/Admin/Testimonials/Preview Testimonials"}
           >
-            Preview
+            Complete
             <img src={files.greaterArrow} alt="arrow" />
           </NavLink>
         </section>

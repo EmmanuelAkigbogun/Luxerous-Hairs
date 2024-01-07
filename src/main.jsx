@@ -38,6 +38,7 @@ import ResetPassword from "./ResetPassword";
 import Admin from "./Admin";
 import AdminDashBoard from "./AdminDashBoard";
 import AdminProducts from "./AdminProducts";
+import AdminProductsAll from "./AdminProductsAll";
 import AdminOrders from "./AdminOrders";
 import Testimonials from "./Testimonials";
 import AdminProductName from "./AdminProductName";
@@ -47,7 +48,8 @@ import AdminAddDescription from "./AdminAddDescription";
 import AdminAddImages from "./AdminAddImages";
 import AddTestimonials from "./AddTestimonials";
 import PreviewTestimonials from "./PreviewTestimonials";
-
+import Dull from "./Dull";
+import AdminProductsBundles from "./AdminProductsBundles";
 
 function Main() {
   let router = createBrowserRouter(
@@ -57,7 +59,10 @@ function Main() {
           <Route path="Admin" element={<Admin />}>
             <Route path="" element={<AdminDashBoard />}></Route>
             <Route path="My Dashboard" element={<AdminDashBoard />}></Route>
-            <Route path="My Products" element={<AdminProducts />}></Route>
+            <Route path="My Products" element={<AdminProducts />}>
+              <Route path="" element={<AdminProductsAll />} />
+              <Route path=":par/:ada" element={<AdminProductsBundles />} />
+            </Route>
             <Route
               path="My Products/View Analytics"
               element={<ViewAnalytics />}
@@ -125,10 +130,10 @@ function Main() {
               ></Route>
             </Route>
           </Route>
-        
+
           <Route path="/" element={<Pages />}>
             <Route path="/Account" element={<CreateAccount />}>
-              <Route path="" element={<SignUp />}></Route>
+              <Route path="" element={<SignIn />}></Route>
               <Route path="Sign Up" element={<SignUp />}></Route>
               <Route path="Sign In" element={<SignIn />}></Route>
               <Route
@@ -138,6 +143,7 @@ function Main() {
               <Route path="Reset Password" element={<ResetPassword />}></Route>
             </Route>
             <Route path="/" element={<Home />} />
+            <Route path="dull" element={<Dull />}></Route>
             <Route path="/" element={<BuyersPurchase />}>
               <Route path="Contact Us" element={<Contact />} />
               <Route path="/Shop Our Bundles" element={<Bundles />} />

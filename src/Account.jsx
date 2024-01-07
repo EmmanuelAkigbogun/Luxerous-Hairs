@@ -1,8 +1,11 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import PaginationWhite from "./General/PaginationWhite";
 let list = ["Account Details", "Order Details"];
 import Header from "./General/Header";
+import { signOut } from "firebase/auth";
+import { auth } from "../config/firebase";
 function Account() {
+    let navigate = useNavigate();
   return (
     <>
       <Header bagBoolean={true} />
@@ -12,9 +15,20 @@ function Account() {
         </section>
         <PaginationWhite list={list} directory="Account" />
         <Outlet />
-        <section>
+        <button
+          className="log_out_pad no_bg no_border"
+          style={{marginTop:"30px"}}
+          onClick={async () => {
+            await signOut(auth)
+              .then((e) => console.log(e))
+              .catch((err) => {
+                console.log(err);
+              });
+            navigate("/Account");
+          }}
+        >
           <h3 className="heading heading3 heading3_small">Log Out</h3>
-        </section>
+        </button>
       </section>
     </>
   );

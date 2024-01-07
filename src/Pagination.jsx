@@ -1,5 +1,5 @@
 import { NavLink, useLocation, useParams } from "react-router-dom";
-function Pagenation({ maplist, maxGuy, constant }) {
+function Pagination({ maplist, maxGuy, constant }) {
   let { par } = useParams();
   let ada = useParams();
   let dia = useParams();
@@ -7,7 +7,7 @@ function Pagenation({ maplist, maxGuy, constant }) {
   let location = useLocation();
   return (
     <>
-      <section className="j_end pagination whitish product_scroll" >
+      <section className="j_end pagination whitish product_scroll">
         {maplist.length < constant * 5 + 1
           ? maplist
               .slice(
@@ -25,7 +25,13 @@ function Pagenation({ maplist, maxGuy, constant }) {
                         : ""
                     }`}
                     to={
-                      location.pathname.includes("_Page_All")
+                      shop == "My Products"
+                        ? `/Admin/My%20Products/${par}/Product Name_Page/${
+                            dia["dia"]
+                          }/_Page_All/_Page${i + 1}`
+                        : location.pathname.includes("Admin/My%20Products")
+                        ? `/Admin/My%20Products/${par}/_Page${i + 1}`
+                        : location.pathname.includes("_Page_All")
                         ? `/Shop Our Bundles/${par}/Product Name_Page/${
                             dia["dia"]
                           }/_Page_All/_Page${i + 1}`
@@ -64,6 +70,14 @@ function Pagenation({ maplist, maxGuy, constant }) {
                             ? maxGuy - 2 - 3 + i + 1
                             : +ada["ada"].replace("_Page", "") - 3 + i + 1
                         }`
+                      : location.pathname.includes("Admin/My%20Products")
+                      ? `/Admin/My%20Products/${par}/_Page${
+                          +ada["ada"].replace("_Page", "") - 3 < 0
+                            ? i + 1
+                            : maxGuy - +ada["ada"].replace("_Page", "") < 2
+                            ? maxGuy - 2 - 3 + i + 1
+                            : +ada["ada"].replace("_Page", "") - 3 + i + 1
+                        }`
                       : location.pathname.includes("_Page_All")
                       ? `/Shop Our Bundles/${par}/Product Name_Page/${
                           dia["dia"]
@@ -96,4 +110,4 @@ function Pagenation({ maplist, maxGuy, constant }) {
     </>
   );
 }
-export default Pagenation;
+export default Pagination;

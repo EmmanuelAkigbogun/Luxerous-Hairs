@@ -1,11 +1,20 @@
-import { Outlet, NavLink, useParams, useLocation } from "react-router-dom";
+import {
+  Outlet,
+  NavLink,
+  useParams,
+  useLocation,
+  useNavigate,
+} from "react-router-dom";
 import PaginationWhite from "./General/PaginationWhite";
 let list = ["My Dashboard", "My Products", "My Orders", "Testimonials"];
 let list1 = ["Description", "Images"];
 import files from "./assets/files";
 import Header from "./General/Header";
+import { auth } from "../config/firebase";
+import { signOut } from "firebase/auth";
 function Admin() {
   let location = useLocation();
+  let navigate = useNavigate();
   let selectList = location.pathname.split("/")[2];
   let { shop } = useParams();
   return (
@@ -49,9 +58,19 @@ function Admin() {
           directory="Admin"
         />
         <Outlet />
-        <section className="log_out_pad">
+        <button
+          className="log_out_pad no_bg no_border"
+          onClick={async () => {
+            await signOut(auth)
+              .then((e) => console.log(e))
+              .catch((err) => {
+                console.log(err);
+              });
+              navigate("/Account")
+          }}
+        >
           <h3 className="heading heading3 heading3_small">Log Out</h3>
-        </section>
+        </button>
       </section>
       {console.log(selectList)}
     </>

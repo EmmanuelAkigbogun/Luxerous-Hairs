@@ -9,6 +9,8 @@ let list1 = ["Description", "Spec"];
 function AdminProductName() {
   let location = useLocation();
   let { shop } = useParams();
+  let { par } = useParams();
+  let { ada } = useParams();
   return (
     <>
       <section className="gap24 column outlet_box100 log_out_mobile log_out_pad_product">
@@ -18,7 +20,11 @@ function AdminProductName() {
           <section className="space_between white_bg gap24 flex_wrap">
             <NavLink
               className={`gap10 align_center row_reverse j_end`}
-              to={`/Admin/My%20Products`}
+              to={
+                shop.includes("New Product")
+                  ? `/Admin/My%20Products`
+                  : `/Admin/My%20Products`
+              }
             >
               <p className={`paragraph paragraph1 nowrap paragraph_bold`}>
                 Back
@@ -42,11 +48,7 @@ function AdminProductName() {
           </section>
         )}
         <section>
-          {shop.includes("New Product") ? (
-            <AdminNewProduct />
-          ) : (
-            <ProductA />
-          )}
+          {shop.includes("New Product") ? <AdminNewProduct /> : <ProductA />}
         </section>
         <section>
           <PaginationWhite
