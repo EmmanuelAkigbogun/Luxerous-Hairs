@@ -26,7 +26,7 @@ export let Grid = ({ data,classValue, bundlename, n, m }) => {
             )}
             <NavLink
               to={`/${
-                location.pathname.replaceAll("%20", " ").endsWith("My Products")
+                location.pathname.replaceAll("%20", " ").includes("Admin/My Products")
                   ? "Admin/My Products"
                   : "Shop Our Bundles"
               }/${bundlename}/Product Name_Page/${4 * n + i + 20 * m}@@Static@${
@@ -58,7 +58,9 @@ export let Grid = ({ data,classValue, bundlename, n, m }) => {
                 ${a.price}
               </p>
             </section>
-            {console.log(a.boolean)}
+            {console.log(
+              location.pathname.replaceAll("%20", " ").endsWith("My Products"),"kill"
+            )}
           </section>
         );
       })}

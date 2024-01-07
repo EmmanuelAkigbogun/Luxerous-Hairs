@@ -22,7 +22,7 @@ export let Location = () => {
               dia !== undefined ? dia.split("@@Static@")[1] : "",
               dia !== undefined ? "Product Details" : ""
             )}
-          {console.log(dia)}
+          {console.log(9)}
         </h1>
         <section className="row gap8 align_center product_scroll">
           {location.pathname
@@ -70,7 +70,7 @@ export let Location = () => {
                                 ? pathSum + "/_Page1"
                                 : pathSum
                             }
-                            state={location.state}
+                      
                             key={e + su}
                           >
                             {
@@ -113,8 +113,7 @@ export let Location = () => {
             })}
         </section>
       </section>
-      {console.log(location.pathname, 90)}
-      {console.log(location.pathname.split("/").length)}
+    
     </>
   );
 };

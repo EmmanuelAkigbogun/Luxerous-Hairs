@@ -1,7 +1,8 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import files from "../assets/files";
 import { NavDropDown } from "./NavDropDown";
+import Profile from "./Profile";
 let list = [
   "Raw Straight Type 1",
   "Raw Straight Type 2",
@@ -14,13 +15,13 @@ let list = [
   "Raw Straight Type 9",
 ];
 //     click=""
+
 function Nav({ bagBoolean }) {
   let ref = useRef(null);
   let [se, sse] = useState("mobile_hide");
   let [h, sh] = useState("");
   let [c, sc] = useState("");
   let [cl, scl] = useState("");
-
   window.onclick = (e) => {
     c == "" ? "" : !ref.current.contains(e.target) && sc((c = ""));
   };
@@ -85,6 +86,7 @@ function Nav({ bagBoolean }) {
                     close={c}
                     click={cl}
                     setClose={sc}
+                    bagBoolean={bagBoolean}
                   />
                 </section>
               </section>
@@ -116,7 +118,7 @@ function Nav({ bagBoolean }) {
               }}
             />
             <NavLink
-              to="/"
+              to={bagBoolean?`/`:`/Admin`}
               className={`heading heading3 ${c == "" ? "none345" : ""}`}
               onClick={() => {
                 window.scrollTo(0, 0);
@@ -139,13 +141,13 @@ function Nav({ bagBoolean }) {
           <section
             className={`row gap24 ${
               c == "" ? "" : "mob_order2 mobile_width100"
-            }`}
+            } ${bagBoolean ? "" : "desk_none"}`}
           >
             <NavLink
               to="/Contact Us"
               className={`paragraph paragraph1 
               mobile_hide
-              ${c == "" ? "" : "mobile_show"}
+              ${c == "" ? "" : bagBoolean ? "mobile_show" : ""}
               `}
               onClick={() => {
                 window.scrollTo(0, 0);
@@ -156,8 +158,8 @@ function Nav({ bagBoolean }) {
             </NavLink>
             <section
               className={`row gap24 nav_icons_container ${
-                c == "" ? "mobile_show" : "mobile_hide"
-              }`}
+                bagBoolean ? "" : "desk_none"
+              } ${c == "" ? "mobile_show" : "mobile_hide"}`}
             >
               <section className="align_center">
                 <img
@@ -171,20 +173,7 @@ function Nav({ bagBoolean }) {
                   }}
                 />
               </section>
-              <NavLink
-                className="align_center"
-                to={`/Account`}
-                onClick={() => {
-                  window.scrollTo(0, 0);
-                  c == "" ? "" : sc((c = ""));
-                }}
-              >
-                <img
-                  src={files.profile}
-                  alt="profile icon"
-                  className="nav_icons"
-                />
-              </NavLink>
+              {bagBoolean ? <Profile c={c} sc={sc} /> : ""}
               <NavLink
                 to={`/Shop%20Our%20Bundles/My%20Cart`}
                 className={`align_center  ${bagBoolean ? "" : "none"}`}

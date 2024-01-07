@@ -19,7 +19,9 @@ function SectionA() {
           data={Object(data)}
           heading="Shop Haircare Products"
         />
-        {console.log(data[0])}
+        {
+       // console.log(data[0])
+        }
       </section>
 
     </>
