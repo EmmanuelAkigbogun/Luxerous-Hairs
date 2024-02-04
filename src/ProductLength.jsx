@@ -1,10 +1,12 @@
 import React, { useImperativeHandle, useState } from "react";
 let length = ["5″", "6″", "7″", "8″", "9″", "10″", "11″", "12″"];
-function ProductLength( props, ref ) {
+function ProductLength({ initialValue, refValue }, ref) {
   let getState = () => {
     return state;
   };
-  let [state, setState] = useState(length[0]);
+  let [state, setState] = useState(
+    initialValue == "" ? length[0] : String(initialValue) + "″"
+  );
   useImperativeHandle(ref, () => ({
     getState,
   }));
@@ -21,7 +23,10 @@ function ProductLength( props, ref ) {
                 }`}
                 key={e}
                 onClick={() => {
-                  setState((state = e));
+                  if (state !== e) {
+                    setState((state = e));
+                    initialValue !== "" && refValue.current.click();
+                  }
                 }}
               >
                 {e}
@@ -30,6 +35,7 @@ function ProductLength( props, ref ) {
           })}
         </section>
       </section>
+      {console.log("length")}
     </section>
   );
 }

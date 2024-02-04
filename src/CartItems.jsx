@@ -144,6 +144,7 @@ function CartItems() {
                           to={`/Shop Our Bundles/${
                             e["id"].split("$starJet")[0]
                           }/Product Name_Page/${e["id"].split("$starJet")[1]}`}
+                          state={i}
                         >
                           Edit Item
                         </NavLink>

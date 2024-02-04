@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import files from "./assets/files";
+import InputField from "./InputField";
 function ContactForm() {
   let ref = useRef(null);
   let handleFocus = () => {
@@ -17,31 +18,22 @@ function ContactForm() {
     >
       <h3 className="heading3 heading">Send Us a Message</h3>
       <section className="column gap12">
-        <section className="column gap4">
-          <section>
-            <label htmlFor="name">Name *</label>
-          </section>
-          <input
-            id="name"
-            name="name"
-            type="text"
-            placeholder="Jane"
-            className="contact_input input_border"
-          />
-        </section>
-        <section className="column gap4">
-          <section>
-            <label htmlFor="email">Email *</label>
-          </section>
-
-          <input
-            id="email"
-            name="email"
-            type="email"
-            placeholder="janejennygmail.com"
-            className="contact_input input_border"
-          />
-        </section>
+        <InputField
+          labelValue="Name"
+          forValue="name"
+          nameValue="name"
+          placeholder="jane"
+          typeValue="text"
+          classValue=""
+        />
+        <InputField
+          labelValue="Email"
+          forValue="email"
+          nameValue="email"
+          placeholder="janejennygmail.com"
+          typeValue="email"
+          classValue=""
+        />
         <section className="column gap4">
           <section>
             <label htmlFor="phone">Phone Number *</label>
@@ -72,19 +64,17 @@ function ContactForm() {
             />
           </section>
         </section>
-        <section className="column gap4">
-          <section>
-            <label htmlFor="message">Message *</label>
-          </section>
-          <textarea
-            id="message"
-            name="message"
-            type="text"
-            placeholder="Start Typing"
-            className="contact_input long_input input_border"
-          ></textarea>
-        </section>
+        <InputField
+          labelValue="Message"
+          forValue="message"
+          nameValue="message"
+          placeholder="Start Typing"
+          typeValue="text"
+          classValue="long_input"
+        />
       </section>
+
+
       <button className="row gap10 button black contact_button">
         Send Message <img src={files.arrowRight} alt="" />
       </button>

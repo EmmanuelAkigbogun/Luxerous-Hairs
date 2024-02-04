@@ -4,6 +4,7 @@ import PasswordField from "./PasswordField";
 import { provider } from "../config/firebase";
 import { auth } from "../config/firebase";
 import { createUserWithEmailAndPassword, signInWithPopup } from "firebase/auth";
+import InputField from "./InputField";
 function SignUp() {
   let navigate = useNavigate();
   auth.onAuthStateChanged(() => {
@@ -37,33 +38,22 @@ function SignUp() {
         >
           <h2 className="heading heading2_small j_center">Sign Up</h2>
           <section className="column gap12">
-            <section className="column gap4">
-              <section>
-                <label htmlFor="name">Name *</label>
-              </section>
-              <input
-                id="name"
-                type="text"
-                name="name"
-                placeholder="jane"
-                className="contact_input input_border"
-                autoComplete="true"
-              />
-            </section>
-            <section className="column gap4">
-              <section>
-                <label htmlFor="email">Email *</label>
-              </section>
-
-              <input
-                id="email"
-                type="email"
-                name="email"
-                placeholder="janejennygmail.com"
-                className="contact_input input_border"
-                autoComplete="true"
-              />
-            </section>
+            <InputField
+              labelValue="Name"
+              forValue="name"
+              nameValue="name"
+              placeholder="jane"
+              typeValue="text"
+              classValue=""npm run de
+            />
+            <InputField
+              labelValue="Email"
+              forValue="email"
+              nameValue="email"
+              placeholder="janejennygmail.com"
+              typeValue="email"
+              classValue=""
+            />
             <PasswordField
               labelValue="Password"
               forValue="password"

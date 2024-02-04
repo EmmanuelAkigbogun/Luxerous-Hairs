@@ -1,11 +1,16 @@
+import { useRef, useState } from "react";
 import files from "./assets/files";
 import { useLocation, useNavigate } from "react-router-dom";
 import data from "./assets/Bundles";
 import { cartQuantity } from "./CartItems";
+import Ordered from "./Ordered";
+import Overlay from "./Overlay";
 function OrderSummary() {
   let cartData = [];
   let location = useLocation();
   let navigate = useNavigate();
+  let [state, setState] = useState(false);
+  let ref=useRef(null)
   let counter = 0;
   let priceData = 0;
   cartQuantity.length == 0
@@ -84,14 +89,17 @@ function OrderSummary() {
                       state: cartData,
                     }
                   )
-                : "";
+                : setState((state = true));
             }}
             className="row gap10 button button0 black width100 vw100"
           >
             {location.pathname.endsWith("My%20Cart") ? (
               <img src={files.sheildTick} alt="" />
             ) : (
-              `Pay $${totalPrice}`
+              <>
+                <section>{`Pay $${totalPrice}`}</section>
+                {state && <Overlay component={<Ordered ref={ref} />} />}
+              </>
             )}
             {location.pathname.endsWith("My%20Cart") ? (
               `Secure Checkout`

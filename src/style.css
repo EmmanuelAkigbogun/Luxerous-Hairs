@@ -27,6 +27,9 @@
 body {
   background: var(--background-Color);
 }
+.transition{
+  transition: all ease-in 0.4s;
+}
 .overlay {
   background: var(--overlay);
   position: fixed;
@@ -39,7 +42,7 @@ body {
   display: flex;
   justify-content: center;
 }
-.overlay::-webkit-scrollbar{
+.overlay::-webkit-scrollbar {
   display: none;
 }
 .overlay_child {
@@ -52,7 +55,7 @@ body {
   left: 0px;
   height: 90vh;
 }
-.overlay_padding{
+.overlay_padding {
   padding: 16px;
 }
 .page_band {
@@ -499,7 +502,7 @@ body::-webkit-scrollbar,
 .none {
   display: none;
 }
-.desk_none{
+.desk_none {
   display: none;
 }
 .gap104 {
@@ -617,7 +620,6 @@ img {
 }
 .drop {
   flex-direction: column;
-
   gap: 16px;
 }
 .drop_child {
@@ -873,8 +875,8 @@ a {
   padding-inline-end: 12px;
 }
 .long_input {
-  height: 100px;
-  resize: none;
+  padding-block: 12px 88px;
+  padding-inline: 12px;
 }
 .long_input1 {
   height: 211px;
@@ -1102,6 +1104,7 @@ li::marker {
 }
 .whitish {
   background: var(--background-Color);
+  
 }
 .thead {
   background: var(--text-color1);
@@ -1112,7 +1115,13 @@ li::marker {
   white-space: nowrap;
   height: 56px;
 }
+.ordered {
+  width: 504px;
+  color: var(--primary-color);
+  margin-top: 40vh;
+}
 /*order details*/
+
 .delivery_status {
   padding: 16px;
   gap: 6px;
@@ -1242,9 +1251,9 @@ li::marker {
     top: auto;
     left: auto;
   }
-  .desk_none{
-  display: flex;
-}
+  .desk_none {
+    display: flex;
+  }
   .mob_deg180 {
     transform: rotateZ(180deg);
   }

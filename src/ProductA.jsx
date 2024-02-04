@@ -1,4 +1,4 @@
-import { NavLink, useParams } from "react-router-dom";
+import { NavLink, useLocation, useParams } from "react-router-dom";
 import files from "./assets/files";
 import data from "./assets/Bundles";
 import { cartQuantity } from "./CartItems";
@@ -17,6 +17,7 @@ function ProductA() {
   let [ar, setAr] = useState("");
   let aImages = useRef(null);
   let aLength = useRef(null);
+  let refValue=useRef(null)
   cartQuantity.length === 0
     ? window.localStorage.getItem("productAstorage") != null
       ? (dataObject = JSON.parse(
@@ -50,6 +51,9 @@ function ProductA() {
         5) /
         product.total
     ).slice(0, 3) + " ";
+  let history = useLocation();
+    console.log(cartQuantity[history.state]?.quantity);
+    console.log(cartQuantity[history.state]?.length);
   return (
     <>
       <section
@@ -59,7 +63,14 @@ function ProductA() {
             : "gap68"
         } row`}
       >
-        <ProductImages ref={aImages} product={product} />
+        <ProductImages
+        refValue={refValue}
+          ref={aImages}
+          product={product}
+          initialValue={
+            history.state == null ? "" : cartQuantity[history.state]?.image
+          }
+        />
         <section className="flex1 column gap68 j_center product_text">
           <section className="gap24 column">
             <section className="gap12 column">
@@ -106,7 +117,13 @@ function ProductA() {
                 </section>
               )}
             </section>
-            <ProductLength ref={aLength} />
+            <ProductLength
+              ref={aLength}
+              refValue={refValue}
+              initialValue={
+                history.state == null ? "" : cartQuantity[history.state]?.length
+              }
+            />
           </section>
           {dia["shop"] == "My Products" || dia["shop"] == "New Product" ? (
             ""
@@ -131,18 +148,23 @@ function ProductA() {
                       Obj["length"] = parseInt(aLength?.current?.getState());
                       Obj["image"] = aImages?.current?.getState();
                       Obj["id"] = par + "$starJet" + dia["dia"];
-                      Obj["quantity"] = 1;
+                      history.state == null
+                        ? (Obj["quantity"] = 1)
+                        : (Obj["quantity"] = dataObject[history.state]["quantity"]);
                     }
                   }
                   boolean
-                    ? (dataObject = dataObject.concat(Obj))
+                    ? history.state == null
+                      ? (dataObject = dataObject.concat(Obj))
+                      : (dataObject[history.state] = Obj)
                     : (boolean = true);
                   console.log(dataObject);
-                  window.localStorage.setItem(
-                    "productAstorage",
-                    JSON.stringify(dataObject)
-                  );
+                       window.localStorage.setItem(
+                         "productAstorage",
+                         JSON.stringify(dataObject)
+                       );
                 }}
+                ref={refValue}
               >
                 <img src={files.bag} alt="a" />
                 Add to Bag

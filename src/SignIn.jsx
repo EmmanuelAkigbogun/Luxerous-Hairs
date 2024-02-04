@@ -3,6 +3,7 @@ import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { NavLink, useNavigate,   } from "react-router-dom";
 import files from "./assets/files";
 import PasswordField from "./PasswordField";
+import InputField from "./InputField";
 function SignIn() {
   let navigate=useNavigate()
   auth.onAuthStateChanged(() => {
@@ -36,20 +37,14 @@ function SignIn() {
         >
           <h2 className="heading heading2_small j_center">Sign In</h2>
           <section className="column gap12">
-            <section className="column gap4">
-              <section>
-                <label htmlFor="email">Email *</label>
-              </section>
-
-              <input
-                id="email"
-                type="email"
-                name="email"
-                placeholder="janejennygmail.com"
-                className="contact_input input_border"
-                autoComplete="true"
-              />
-            </section>
+            <InputField
+              labelValue="Email"
+              forValue="email"
+              nameValue="password-sign-in"
+              placeholder="janejennygmail.com"
+              typeValue="email"
+              classValue=""
+            />
             <PasswordField
               labelValue="Password"
               forValue="password"

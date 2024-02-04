@@ -11,11 +11,13 @@ let productList = [
   "green",
   "red",
 ];
-function ProductImages({product}, ref) {
+function ProductImages({ product, initialValue, refValue }, ref) {
   let getState = () => {
     return image;
   };
-  let [image, setImage] = useState(productList[0]);
+  let [image, setImage] = useState(
+    initialValue == "" ? productList[0] : initialValue
+  );
   useImperativeHandle(ref, () => ({
     getState,
   }));
@@ -32,7 +34,10 @@ function ProductImages({product}, ref) {
                 style={{ background: `${e}` }}
                 key={e}
                 onClick={() => {
-                  setImage((image = e));
+                  if (image !== e) {
+                    setImage((image = e));
+                    initialValue !== "" && refValue.current.click();
+                  }
                 }}
               />
             );
@@ -47,6 +52,7 @@ function ProductImages({product}, ref) {
           style={{ background: `${image}` }}
         />
       </section>
+      {console.log("image")}
     </section>
   );
 }
