@@ -18,7 +18,7 @@ function DullChild1(props, ref) {
             se((l = "red"));
           }}
         >
-          click red
+          click red color
         </button>
         <button
           className="heading heading1"
