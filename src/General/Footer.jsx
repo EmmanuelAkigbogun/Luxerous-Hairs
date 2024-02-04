@@ -20,7 +20,7 @@ function Footer() {
                 window.scrollTo(0, 0);
               }}
             >
-              <h3>Luxurious Hair</h3>
+              <h3 className="heading heading3">Luxurious Hair</h3>
             </NavLink>
             <p className="paragraph pragraph2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc

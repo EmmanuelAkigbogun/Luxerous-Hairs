@@ -10,7 +10,7 @@ function SectionD() {
           <section className="column gap16 j_center align_center d_child">
             <section className="d_child_child">
               <section
-                className="button space_between gap24 align_start wrap225"
+                className="button space_between gap24 align_start wrap225 pointer"
                 onClick={() => {
                   state == "1"
                     ? setState((state = ""))
@@ -40,7 +40,7 @@ function SectionD() {
                 />
               </section>
               <section
-                className="button space_between gap24 align_start wrap225"
+                className="button space_between gap24 align_start wrap225 pointer"
                 onClick={() => {
                   state == "2"
                     ? setState((state = ""))
@@ -70,7 +70,7 @@ function SectionD() {
                 />
               </section>
               <section
-                className="button space_between gap24 align_start wrap225"
+                className="button space_between gap24 align_start wrap225 pointer"
                 onClick={() => {
                   state == "3"
                     ? setState((state = ""))
@@ -100,7 +100,7 @@ function SectionD() {
                 />
               </section>
               <section
-                className="button space_between gap24 align_start wrap225"
+                className="button space_between gap24 align_start wrap225 pointer"
                 onClick={() => {
                   state == "4"
                     ? setState((state = ""))

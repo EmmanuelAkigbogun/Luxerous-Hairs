@@ -28,7 +28,7 @@ function Nav({ bagBoolean }) {
   return (
     <>
       <header
-        className={`fixed ${c == "" ? "" : "mob_80vh mob_overflow "}`}
+        className={`fixed ${c == "" ? "" : "mob_80vh mob_overflow "} transition`}
         ref={ref}
       >
         <nav
@@ -118,7 +118,7 @@ function Nav({ bagBoolean }) {
               }}
             />
             <NavLink
-              to={bagBoolean?`/`:`/Admin`}
+              to={bagBoolean ? `/` : `/Admin`}
               className={`heading heading3 ${c == "" ? "none345" : ""}`}
               onClick={() => {
                 window.scrollTo(0, 0);
@@ -187,7 +187,9 @@ function Nav({ bagBoolean }) {
             </section>
           </section>
         </nav>
-        <section className={`parent_section nav_bottom none width100 ${se}`}>
+        <section
+          className={`parent_section nav_bottom none width100 ${c===""&&se}`}
+        >
           <section className="row gap8 search_container width100">
             <input
               type="search"
