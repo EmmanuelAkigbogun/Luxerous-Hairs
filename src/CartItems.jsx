@@ -96,26 +96,6 @@ function CartItems() {
                             Quantity
                           </p>
                           <section className="gap12 row">
-                            <NavLink
-                              className="button3 paragraph paragraph2"
-                              onClick={() => {
-                                cartQuantity[i]["quantity"] =
-                                  cartQuantity[i]["quantity"] + 1;
-                                window.localStorage.setItem(
-                                  "productAstorage",
-                                  JSON.stringify(cartQuantity)
-                                );
-                                navigate("", { state: cartQuantity });
-                              }}
-                            >
-                              +
-                            </NavLink>
-                            <p
-                              className="paragraph paragraph2"
-                              key={String(Math.random()).slice(2, 8)}
-                            >
-                              {e["quantity"]}
-                            </p>
                             <button
                               className="button3 paragraph paragraph2"
                               onClick={() => {
@@ -133,6 +113,26 @@ function CartItems() {
                             >
                               -
                             </button>
+                            <p
+                              className="paragraph paragraph2"
+                              key={String(Math.random()).slice(2, 8)}
+                            >
+                              {e["quantity"]}
+                            </p>{" "}
+                            <NavLink
+                              className="button3 paragraph paragraph2"
+                              onClick={() => {
+                                cartQuantity[i]["quantity"] =
+                                  cartQuantity[i]["quantity"] + 1;
+                                window.localStorage.setItem(
+                                  "productAstorage",
+                                  JSON.stringify(cartQuantity)
+                                );
+                                navigate("", { state: cartQuantity });
+                              }}
+                            >
+                              +
+                            </NavLink>
                           </section>
                         </section>
                       </section>
